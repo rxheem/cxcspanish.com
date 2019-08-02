@@ -1,4 +1,4 @@
-Sitemap: https://www.csecspanish.com/sitemap.xml
+Sitemap: https://www.csecespanol.co/sitemap.xml
 
 # No indexing for Googlebot
 User-agent: *
