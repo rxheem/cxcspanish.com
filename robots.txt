@@ -1,0 +1,13 @@
+Sitemap: https://www.csecspanish.com/sitemap.xml
+
+# No indexing for Googlebot
+User-agent: *
+Disallow: /nobots/
+
+# Block gifs from being indexed
+User-agent: Googlebot
+Disallow: /*.gif$
+
+# Allow Adsense
+User-agent: Mediapartners-Google
+Allow: /
