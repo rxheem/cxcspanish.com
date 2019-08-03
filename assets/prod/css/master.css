@@ -350,11 +350,15 @@ footer a:hover {
      color: white!important;
    }
 
-   .push-over-on-small {
+   main {
      padding-left: 15px!important;
    }
  }
 
  footer li {
    line-height: 25px!important;
+ }
+
+ .field {
+   padding: 5px 0px;
  }
