@@ -1,2 +1,0 @@
-# csecespanol.co
-# cxcspanish.com
