@@ -363,6 +363,12 @@ footer a:hover {
    main {
      margin: 0px 15px!important;
    }
+
+
+    .scrollable {
+       overflow: auto;
+        height: 600px;
+    }
  }
 
  footer li {
