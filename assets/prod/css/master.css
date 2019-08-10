@@ -8,6 +8,12 @@
        height: 100px!important;
      }
 
+     .rainbow-text {
+       background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+}
+
   .shadow-sm {
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
   }
