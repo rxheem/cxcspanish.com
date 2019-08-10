@@ -91,6 +91,11 @@
       href="../assets/vendor/css/bootstrap/bootstrap-4.3.1-alerts.css"
     />
     <link rel="stylesheet" href="../assets/prod/css/master.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/bulma-0.7.5 2/css/bulma-tooltip.css"
+    />
+
     <script src="../assets/vendor/js/jquery-3.4.1.min.js"></script>
   </head>
   <body>
@@ -400,11 +405,23 @@
                     <li>
                       Voy a llegar tarde porque me desperté tarde y yo no pude
                       encontrar las llaves de mi coche.
+                      <span
+                        class="tooltip is-tooltip-multiline"
+                        data-tooltip="I am going to be late becuase I got up late and I couln't find my car keys."
+                      >
+                        <i class="fas fa-info-circle"></i>
+                      </span>
                     </li>
                     <br />
                     <li>
                       Llegaré tarde porque no estaba funcionando mi auto y yo
                       estaba haciendo mi tarea de clase este mañana.
+                      <span
+                        class="tooltip is-tooltip-multiline"
+                        data-tooltip="I'll be arriving late becuase my war wasn't working and I was doing my home work this morning."
+                      >
+                        <i class="fas fa-info-circle"></i>
+                      </span>
                     </li>
                   </ul>
                 </div>
