@@ -14,7 +14,7 @@
     />
     <meta
       name="description"
-      content="Directed Situations are short scenarios or situations in which you are required to provide a short response in Spanish."
+      content="Directed Situations are short scenarios or situations in which you are required to provide a one sentence response in Spanish."
     />
     <meta name="copyright" content="Language Learners" />
     <meta name="language" content="EN" />
@@ -25,7 +25,7 @@
     <meta name="Classification" content="Education" />
     <meta name="designer" content="Raheem McDonald" />
     <meta name="copyright" content="Raheem McDonald | Language Learners" />
-    <meta name="reply-to" content="info@csecespanol.co" />
+    <meta name="reply-to" content="info@cxcspanish.com" />
     <meta name="owner" content="Raheem McDonald" />
     <meta name="url" content="https://www.cxcspanish.com" />
     <meta name="identifier-URL" content="https://www.cxcspanish.com" />
@@ -56,7 +56,7 @@
     />
     <meta name="subject" content="CSEC Spanish - Directed Situations" />
     <meta name="category" content="Education" />
-    <link rel="canonical" href="https://www.cxcspanish.cm" />
+    <link rel="canonical" href="https://www.cxcspanish.com" />
     <meta
       name="og:title"
       content="Directed Situations - CSEC Spanish | Guide, Past Papers and Exercises"
@@ -358,18 +358,44 @@
             </div>
 
             <div class="content">
+              <!-- Overview -->
               <div id="overview">
-                <p>This is overview</p>
+                <p>
+                  Directed Situations are short scenarios or situations in which
+                  you are required to provide a one sentence response in
+                  Spanish.
+                </p>
+                <p>For example, you are given the following scenario:</p>
+
+                <p class="example">
+                  <i
+                    class="fas fa-quote-left nav-icon"
+                    style="color: purple;"
+                  ></i>
+                  You are going to be late for an activity. Send a message to
+                  the organiser giving two reasons for your lateness.
+                </p>
+
+                <div
+                  class="quick-answer"
+                  style="padding-left: 30px; padding-top: 20px; "
+                >
+                  <i class="fas fa-bolt nav-icon"></i>
+                  <small> <i>Quick Answer</i> </small>
+                </div>
               </div>
 
+              <!-- Examples -->
               <div id="examples" style="display:none;">
                 <p>This is examples</p>
               </div>
 
+              <!-- Exercises -->
               <div id="exercises" style="display:none;">
                 <p>This is exercises</p>
               </div>
 
+              <!-- Resources -->
               <div id="resources" style="display:none;">
                 <p>This is resources</p>
               </div>
@@ -459,6 +485,9 @@
             $("#resources").show();
             $(".liResources").addClass("is-active");
           });
+
+          // Triggers click on Overview tabs
+          $(".btnOverview").trigger("click");
         });
       </script>
     </main>

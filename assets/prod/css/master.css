@@ -385,3 +385,16 @@ footer a:hover {
 a:hover {
   text-decoration: none!important;
 }
+
+.example {
+  font-style: italic;
+}
+
+.quick-answer {
+  background-color: #fffaf2;
+  min-height: 80px;
+}
+
+.fa-bolt {
+  color: #fd7e14!important;
+}
