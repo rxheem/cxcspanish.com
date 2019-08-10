@@ -1,0 +1,93 @@
+<div class="tabs">
+  <ul>
+    <li id="liOverview" class="is-active">
+      <a id="btnOverview">Overview</a>
+    </li>
+    <li id="liExamples"><a id="btnExamples">Examples</a></li>
+    <li id="liExercises"><a id="btnExercises">Exercises</a></li>
+    <li id="liResources">
+      <a id="btnResources"
+        ><i
+          class="far fa-file-pdf inline-icon"
+          aria-hidden="true"
+        ></i
+        >Resources</a
+      >
+    </li>
+  </ul>
+</div>
+
+<div class="content">
+  <div id="overview">
+    <p>This is overview</p>
+  </div>
+
+  <div id="examples" style="display:none;">
+    <p>This is examples</p>
+  </div>
+
+  <div id="exercises" style="display:none;">
+    <p>This is exercises</p>
+  </div>
+
+  <div id="resources" style="display:none;">
+    <p>This is resources</p>
+  </div>
+</div>
+
+<!-- Controls for the tabs -->
+<script>
+  $(document).ready(function() {
+    // Function to remove active class  from all <li />
+    function removeActiveClass() {
+      $("#liOverview").removeClass("is-active");
+      $("#liResources").removeClass("is-active");
+      $("#liExercises").removeClass("is-active");
+      $("#liExamples").removeClass("is-active");
+    }
+
+    // Function to hide all the content
+    function hideAllContent() {
+      $("#overview").hide();
+      $("#exercises").hide();
+      $("#resources").hide();
+      $("#examples").hide();
+    }
+
+    // On click event for overview
+    $("#btnOverview").click(function() {
+      removeActiveClass();
+      hideAllContent();
+
+      $("#overview").show();
+      $("#liOverview").addClass("is-active");
+    });
+
+    // On click event for Examples
+    $("#btnExamples").click(function() {
+      removeActiveClass();
+      hideAllContent();
+
+      $("#examples").show();
+      $("#liExamples").addClass("is-active");
+    });
+
+    // On click event for Exercises
+    $("#btnExercises").click(function() {
+      removeActiveClass();
+      hideAllContent();
+
+      $("#exercises").show();
+      $("#liExercises").addClass("is-active");
+    });
+
+    // On click event for overview
+    $("#btnResources").click(function() {
+      hideAllContent();
+      removeActiveClass();
+
+      $("#resources").show();
+      $("#liResources").addClass("is-active");
+    });
+  });
+</script>

@@ -91,6 +91,7 @@
       href="../assets/vendor/css/bootstrap/bootstrap-4.3.1-alerts.css"
     />
     <link rel="stylesheet" href="../assets/prod/css/master.css" />
+    <script src="../assets/vendor/js/jquery-3.4.1.min.js"></script>
   </head>
   <body>
     <header id="header">
@@ -294,6 +295,18 @@
           </div>
         </div>
       </nav>
+
+      <!-- Navigation Toggler -->
+      <script>
+        $(document).ready(function() {
+          // Check for click events on the navbar burger icon
+          $(".navbar-burger").click(function() {
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            $(".navbar-burger").toggleClass("is-active");
+            $(".navbar-menu").toggleClass("is-active");
+          });
+        });
+      </script>
     </header>
 
     <br />
@@ -323,13 +336,13 @@
 
             <div class="tabs">
               <ul>
-                <li class="is-active">
-                  <a>Overview</a>
+                <li id="liOverview" class="is-active">
+                  <a id="btnOverview">Overview</a>
                 </li>
-                <li><a>Examples</a></li>
-                <li><a>Exercises</a></li>
-                <li>
-                  <a
+                <li id="liExamples"><a id="btnExamples">Examples</a></li>
+                <li id="liExercises"><a id="btnExercises">Exercises</a></li>
+                <li id="liResources">
+                  <a id="btnResources"
                     ><i
                       class="far fa-file-pdf inline-icon"
                       aria-hidden="true"
@@ -340,15 +353,23 @@
               </ul>
             </div>
 
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+            <div class="content">
+              <div id="overview">
+                <p>This is overview</p>
+              </div>
+
+              <div id="examples" style="display:none;">
+                <p>This is examples</p>
+              </div>
+
+              <div id="exercises" style="display:none;">
+                <p>This is exercises</p>
+              </div>
+
+              <div id="resources" style="display:none;">
+                <p>This is resources</p>
+              </div>
+            </div>
           </div>
 
           <!-- End main contnet -->
@@ -357,18 +378,66 @@
           <div class="column is-one-fifth"></div>
         </div>
         <!-- End column-->
-
-        <div class="notification is-info">
-          <button class="delete"></button>
-          Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem
-          ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis
-          placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
-          fringilla. Nullam gravida purus diam, et dictum
-          <a>felis venenatis</a> efficitur. Sit amet, consectetur adipiscing
-          elit
-        </div>
       </div>
+
+      <!-- Controls for the tabs -->
+      <script>
+        $(document).ready(function() {
+          // Function to remove active class  from all <li />
+          function removeActiveClass() {
+            $("#liOverview").removeClass("is-active");
+            $("#liResources").removeClass("is-active");
+            $("#liExercises").removeClass("is-active");
+            $("#liExamples").removeClass("is-active");
+          }
+
+          // Function to hide all the content
+          function hideAllContent() {
+            $("#overview").hide();
+            $("#exercises").hide();
+            $("#resources").hide();
+            $("#examples").hide();
+          }
+
+          // On click event for overview
+          $("#btnOverview").click(function() {
+            removeActiveClass();
+            hideAllContent();
+
+            $("#overview").show();
+            $("#liOverview").addClass("is-active");
+          });
+
+          // On click event for Examples
+          $("#btnExamples").click(function() {
+            removeActiveClass();
+            hideAllContent();
+
+            $("#examples").show();
+            $("#liExamples").addClass("is-active");
+          });
+
+          // On click event for Exercises
+          $("#btnExercises").click(function() {
+            removeActiveClass();
+            hideAllContent();
+
+            $("#exercises").show();
+            $("#liExercises").addClass("is-active");
+          });
+
+          // On click event for overview
+          $("#btnResources").click(function() {
+            hideAllContent();
+            removeActiveClass();
+
+            $("#resources").show();
+            $("#liResources").addClass("is-active");
+          });
+        });
+      </script>
     </main>
+
     <br />
 
     <footer id="footer" class="footer has-background-dark">
@@ -453,34 +522,10 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/3b83e0293b.js"></script>
-    <script src="../assets/vendor/js/jquery-3.4.1.min.js"></script>
     <script src="../assets/vendor/js/scrollreveal.js"></script>
     <script src="../assets/vendor/js/sweetalert2.min.js"></script>
     <script src="../assets/vendor/js/promise-polyfill.js"></script>
     <script src="../assets/vendor/js/notify.min.js"></script>
     <script src="../assets/prod/js/master.js"></script>
-
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Navigation Toggler -->
-    <script>
-      $(document).ready(function() {
-        // Check for click events on the navbar burger icon
-        $(".navbar-burger").click(function() {
-          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-          $(".navbar-burger").toggleClass("is-active");
-          $(".navbar-menu").toggleClass("is-active");
-        });
-      });
-    </script>
   </body>
 </html>
