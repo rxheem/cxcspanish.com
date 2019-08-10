@@ -350,6 +350,9 @@
                   <li class="liExamples">
                     <a class="btnExamples">Examples</a>
                   </li>
+                  <li class="liTipsAndTricks">
+                    <a class="btnTipsAndTricks">Tips and Tricks</a>
+                  </li>
                   <li class="liExercises">
                     <a class="btnExercises">Exercises</a>
                   </li>
@@ -474,7 +477,12 @@
                     <ul>
                       <li>
                         Feliz cumpleaños, Juan, y espero que
-                        <a href="../tenses/subjunctive-mood.html" target="_blank">tengas</a> un buen día.
+                        <a
+                          href="../tenses/subjunctive-mood.html"
+                          target="_blank"
+                          >tengas</a
+                        >
+                        un buen día.
                       </li>
                     </ul>
                   </div>
@@ -485,11 +493,28 @@
                     Also, it is important to take note of the verb tense and
                     phrases required for each scenario.
                   </div>
+
+                  <h5>Tips and Tricks</h5>
+
+                  <p>
+                    Directed Situations normally appear in Section I and are
+                    worth a total of 30 marks. These five (5) tips will help
+                    maximize on all aplicable areas.
+                  </p>
+
+                  <ol>
+                    <li>Keep your responses short and concise.</li>
+                  </ol>
                 </div>
 
                 <!-- Examples -->
                 <div id="examples" style="display:none;">
                   <p>This is examples</p>
+                </div>
+
+                <!-- Tips and Tricks -->
+                <div id="tipsandtricks" style="display:none;">
+                  <p>This is tips and tricks</p>
                 </div>
 
                 <!-- Exercises -->
@@ -510,6 +535,9 @@
                   </li>
                   <li class="liExamples">
                     <a class="btnExamples">Examples</a>
+                  </li>
+                  <li class="liTipsAndTricks">
+                    <a class="btnTipsAndTricks">Tips and Tricks</a>
                   </li>
                   <li class="liExercises">
                     <a class="btnExercises">Exercises</a>
@@ -545,6 +573,7 @@
             $(".liResources").removeClass("is-active");
             $(".liExercises").removeClass("is-active");
             $(".liExamples").removeClass("is-active");
+            $(".liTipsAndTricks").removeClass("is-active");
           }
 
           // Function to hide all the content
@@ -553,6 +582,7 @@
             $("#exercises").hide();
             $("#resources").hide();
             $("#examples").hide();
+            $("#tipsandtricks").hide();
           }
 
           // On click event for overview
@@ -571,6 +601,15 @@
 
             $("#examples").show();
             $(".liExamples").addClass("is-active");
+          });
+
+          // On click event for Examples
+          $(".btnTipsAndTricks").click(function() {
+            removeActiveClass();
+            hideAllContent();
+
+            $("#tipsandtricks").show();
+            $(".liTipsAndTricks").addClass("is-active");
           });
 
           // On click event for Exercises
