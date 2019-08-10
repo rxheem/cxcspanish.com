@@ -1,0 +1,193 @@
+<div class="container">
+  <!-- Main columns -->
+  <div class="columns">
+    <!-- left colum -->
+    <div class="column is-one-fifth"></div>
+    <!-- End Left column -->
+
+    <!-- Main contnet with scrollable -->
+    <div class="column">
+      <div>
+        <h1 class="title is-4">Directed Situations</h1>
+
+        <div class="tabs">
+          <ul class="list-unstyled">
+            <li class="liOverview" class="is-active">
+              <a class="btnOverview">Overview</a>
+            </li>
+            <li class="liExamples">
+              <a class="btnExamples">Examples</a>
+            </li>
+            <li class="liExercises">
+              <a class="btnExercises">Exercises</a>
+            </li>
+            <li class="liResources">
+              <a class="btnResources"
+                ><i
+                  class="far fa-file-pdf inline-icon"
+                  aria-hidden="true"
+                ></i
+                >Resources</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="content">
+          <!-- Overview -->
+          <div id="overview">
+            <p>
+              Directed Situations are short scenarios or situations in
+              which you are required to provide a one sentence response in
+              Spanish.
+            </p>
+            <p>For example, you are given the following scenario:</p>
+
+            <p class="example">
+              <i
+                class="fas fa-quote-left nav-icon"
+                style="color: #FF1493;"
+              ></i>
+              You are going to be late for an activity. Send a message to
+              the organiser giving two reasons for your tardiness.
+              <i
+                class="fas fa-quote-right nav-icon"
+                style="color: #FF1493;"
+              ></i>
+            </p>
+
+            <p>In the example, you are required to do two things:</p>
+
+            <ul>
+              <li>Indicate that you will be late, and,</li>
+              <li>State two reasons why you will be late.</li>
+            </ul>
+
+            <!-- Response -->
+            <div class="notification is-info shadow-lg">
+              <span
+                ><i
+                  class="fas fa-bolt nav-icon"
+                  style="color: #fd7e14;"
+                ></i>
+                Quick Answer</span
+              >
+              <ul>
+                <li>
+                  Voy a llegar tarde porque me desperté tarde y yo no pude
+                  encontrar las llaves de mi coche.
+                  <span
+                    class="tooltip is-tooltip-multiline"
+                    data-tooltip="I am going to be late becuase I got up late and I couln't find my car keys."
+                  >
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                </li>
+                <br />
+                <li>
+                  Llegaré tarde porque no estaba funcionando mi auto y yo
+                  estaba haciendo mi tarea de clase este mañana.
+                  <span
+                    class="tooltip is-tooltip-multiline"
+                    data-tooltip="I'll be arriving late becuase my war wasn't working and I was doing my home work this morning."
+                  >
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            <p>Let's take a look at another example:</p>
+
+            <p class="example">
+              <i
+                class="fas fa-quote-left nav-icon"
+                style="color: #FF1493;"
+              ></i>
+              Your friend’s birthday is coming up. Write the text message
+              you send him with well wishes.
+              <i
+                class="fas fa-quote-right nav-icon"
+                style="color: #FF1493;"
+              ></i>
+            </p>
+
+            <p>In this example, you are required to</p>
+
+            <ul>
+              <li>Acknowledge that it is your friend's birthday,</li>
+              <li>Wish him well wishes.</li>
+            </ul>
+
+            <!-- Response -->
+            <div class="notification is-info shadow-lg">
+              <span
+                ><i
+                  class="fas fa-bolt nav-icon"
+                  style="color: #fd7e14;"
+                ></i>
+                Quick Answer</span
+              >
+              <ul>
+                <li>
+                  Feliz cumpleaños, Juan, y espero que tengas un buen día.
+                </li>
+              </ul>
+            </div>
+
+            <div class="alert alert-danger" role="alert">
+              <bold>NB:</bold>
+              You will be penalized if you write more than one sentence.
+              Also, it is important to take note of the verb tense and
+              phrases required for each scenario.
+            </div>
+          </div>
+
+          <!-- Examples -->
+          <div id="examples" style="display:none;">
+            <p>This is examples</p>
+          </div>
+
+          <!-- Exercises -->
+          <div id="exercises" style="display:none;">
+            <p>This is exercises</p>
+          </div>
+
+          <!-- Resources -->
+          <div id="resources" style="display:none;">
+            <p>This is resources</p>
+          </div>
+        </div>
+
+        <div class="tabs is-hidden-desktop">
+          <ul>
+            <li class="liOverview" class="is-active">
+              <a class="btnOverview">Overview</a>
+            </li>
+            <li class="liExamples">
+              <a class="btnExamples">Examples</a>
+            </li>
+            <li class="liExercises">
+              <a class="btnExercises">Exercises</a>
+            </li>
+            <li class="liResources">
+              <a class="btnResources"
+                ><i
+                  class="far fa-file-pdf inline-icon"
+                  aria-hidden="true"
+                ></i
+                >Resources</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- End main contnet -->
+
+    <!-- Right column  -->
+    <div class="column is-one-fifth"></div>
+  </div>
+  <!-- End column-->
+</div>
