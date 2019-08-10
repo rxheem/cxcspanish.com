@@ -1,12 +1,14 @@
 <div class="tabs">
   <ul>
-    <li id="liOverview" class="is-active">
-      <a id="btnOverview">Overview</a>
+    <li class="liOverview" class="is-active">
+      <a class="btnOverview">Overview</a>
     </li>
-    <li id="liExamples"><a id="btnExamples">Examples</a></li>
-    <li id="liExercises"><a id="btnExercises">Exercises</a></li>
-    <li id="liResources">
-      <a id="btnResources"
+    <li class="liExamples"><a class="btnExamples">Examples</a></li>
+    <li class="liExercises">
+      <a class="btnExercises">Exercises</a>
+    </li>
+    <li class="liResources">
+      <a class="btnResources"
         ><i
           class="far fa-file-pdf inline-icon"
           aria-hidden="true"
@@ -35,15 +37,38 @@
   </div>
 </div>
 
+<div class="tabs is-hidden-desktop">
+  <ul>
+    <li class="liOverview" class="is-active">
+      <a class="btnOverview">Overview</a>
+    </li>
+    <li class="liExamples"><a class="btnExamples">Examples</a></li>
+    <li class="liExercises">
+      <a class="btnExercises">Exercises</a>
+    </li>
+    <li class="liResources">
+      <a class="btnResources"
+        ><i
+          class="far fa-file-pdf inline-icon"
+          aria-hidden="true"
+        ></i
+        >Resources</a
+      >
+    </li>
+  </ul>
+</div>
+
+
+
 <!-- Controls for the tabs -->
 <script>
   $(document).ready(function() {
     // Function to remove active class  from all <li />
     function removeActiveClass() {
-      $("#liOverview").removeClass("is-active");
-      $("#liResources").removeClass("is-active");
-      $("#liExercises").removeClass("is-active");
-      $("#liExamples").removeClass("is-active");
+      $(".liOverview").removeClass("is-active");
+      $(".liResources").removeClass("is-active");
+      $(".liExercises").removeClass("is-active");
+      $(".liExamples").removeClass("is-active");
     }
 
     // Function to hide all the content
@@ -55,39 +80,39 @@
     }
 
     // On click event for overview
-    $("#btnOverview").click(function() {
+    $(".btnOverview").click(function() {
       removeActiveClass();
       hideAllContent();
 
       $("#overview").show();
-      $("#liOverview").addClass("is-active");
+      $(".liOverview").addClass("is-active");
     });
 
     // On click event for Examples
-    $("#btnExamples").click(function() {
+    $(".btnExamples").click(function() {
       removeActiveClass();
       hideAllContent();
 
       $("#examples").show();
-      $("#liExamples").addClass("is-active");
+      $(".liExamples").addClass("is-active");
     });
 
     // On click event for Exercises
-    $("#btnExercises").click(function() {
+    $(".btnExercises").click(function() {
       removeActiveClass();
       hideAllContent();
 
       $("#exercises").show();
-      $("#liExercises").addClass("is-active");
+      $(".liExercises").addClass("is-active");
     });
 
     // On click event for overview
-    $("#btnResources").click(function() {
+    $(".btnResources").click(function() {
       hideAllContent();
       removeActiveClass();
 
       $("#resources").show();
-      $("#liResources").addClass("is-active");
+      $(".liResources").addClass("is-active");
     });
   });
 </script>
