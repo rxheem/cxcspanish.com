@@ -2,7 +2,7 @@ Sitemap: https://www.csecespanol.co/sitemap.xml
 
 # No indexing for Bots
 User-agent: *
-Disallow: /nobots/
+Disallow: /guides/
 
 # Block gifs from being indexed
 User-agent: Googlebot
