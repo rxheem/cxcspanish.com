@@ -275,7 +275,7 @@
         </div>
       </nav>
     </header>
-    <ul id="mini-nav" class="is-hidden-desktop is-pulled-right">
+    <ul id="mini-nav" class="is-pulled-right" style="padding-right: 20px">
       <li>
         <a target="_blank" href="https://www.instagram.com/csecspanish/"
           ><i style="color: #E1306C!important;" class="fab fa-instagram"></i
@@ -288,20 +288,22 @@
           ><i style="color: #3b5998!important;" class="fab fa-facebook"></i
         ></a>
       </li>
-      <li>
-        <a target="_blank" href="#"
-          ><i
-            style="color: #0078FF!important"
-            class="fab fa-facebook-messenger"
-          ></i
-        ></a>
-      </li>
+
       <li>
         <a target="_blank" href="mailto:hola@cxcspanish.com"
           ><i style="color: grey!important" class="fas fa-envelope"></i
         ></a>
       </li>
     </ul>
+
+    <div
+      class="fb-messengermessageus is-pulled-right"
+      style="padding-right: 10px;"
+      messenger_app_id="669007593616991"
+      page_id="105703077445673"
+      color="blue"
+      size="large"
+    ></div>
 
     <style media="screen">
       #mini-nav li {
@@ -460,5 +462,21 @@
         });
       }
     </script>
+
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId: "669007593616991",
+          autoLogAppEvents: true,
+          xfbml: true,
+          version: "v4.0"
+        });
+      };
+    </script>
+    <script
+      async
+      defer
+      src="https://connect.facebook.net/en_US/sdk.js"
+    ></script>
   </body>
 </html>
