@@ -1,3 +1,7 @@
+#mini-nav li {
+  display: inline-block;
+  padding: 5px 10px !important;
+}
 
 .underline:hover {
   text-decoration: underline!important;
