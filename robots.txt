@@ -1,0 +1,23 @@
+User-agent: *
+Disallow: /*.xml$
+Disallow: /*.txt$
+Disallow: /cdn-cgi/
+
+User-agent: discobot
+Disallow: /
+
+User-agent: dotbot
+Disallow: /
+
+User-agent: Slurp
+Crawl-delay: 4
+
+User-agent: yacybot
+Disallow: /
+
+User-agent: msnbot
+Crawl-delay: 120
+Disallow: /*.xml$
+
+User-agent: *
+Disallow: /*?$
