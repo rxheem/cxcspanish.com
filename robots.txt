@@ -1,9 +1,0 @@
-Sitemap: https://www.cxcspanish.com/sitemap.xml
-
-# Block gifs from being indexed
-User-agent: Googlebot
-Disallow: /*.gif$
-
-# Allow Adsense
-User-agent: Mediapartners-Google
-Allow: /
