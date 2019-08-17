@@ -191,3 +191,230 @@
   </div>
   <!-- End column-->
 </div>
+
+
+
+
+
+
+
+<div class="content">
+  <!-- Overview -->
+  <div id="overview">
+    <p>
+      Directed Situations are short scenarios or situations in
+      which you are required to provide a one sentence response in
+      Spanish.
+    </p>
+
+    <iframe
+      style="height: 315px!important;"
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/3nVHhqblh88"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+
+    <p>For example, you are given the following scenario:</p>
+
+    <p class="example">
+      <i
+        class="fas fa-quote-left nav-icon"
+        style="color: #FF1493;"
+      ></i>
+      You are going to be late for an activity. Send a message to
+      the organiser giving two reasons for your tardiness.
+      <i
+        class="fas fa-quote-right nav-icon"
+        style="color: #FF1493;"
+      ></i>
+    </p>
+
+    <p>In the example, you are required to do two things:</p>
+
+    <ul>
+      <li>Indicate that you will be late, and,</li>
+      <li>State two reasons why you will be late.</li>
+    </ul>
+
+    <!-- Response -->
+    <div class="notification is-info shadow-lg">
+      <span
+        ><i
+          class="fas fa-bolt nav-icon"
+          style="color: #fd7e14;"
+        ></i>
+        Quick Answer</span
+      >
+      <ul>
+        <li>
+          <a
+            target="_blank"
+            href="../tenses/present-progressive.html"
+            >Voy a llegar
+          </a>
+          tarde porque me desperté tarde y yo no pude encontrar
+          las llaves de mi coche.
+          <span
+            class="tooltip is-tooltip-multiline"
+            data-tooltip="I am going to be late becuase I got up late and I couln't find my car keys."
+          >
+            <i class="fas fa-info-circle"></i>
+          </span>
+        </li>
+        <br />
+        <li>
+          Llegaré tarde porque no
+          <a
+            href="https://www.spanishdict.com/guide/spanish-imperfect-progressive-tense"
+            target="_blank"
+            >estaba funcionando</a
+          >
+          mi auto y yo estaba haciendo mi tarea de clase este
+          mañana.
+          <span
+            class="tooltip is-tooltip-multiline"
+            data-tooltip="I'll be arriving late becuase my war wasn't working and I was doing my home work this morning."
+          >
+            <i class="fas fa-info-circle"></i>
+          </span>
+        </li>
+      </ul>
+    </div>
+
+    <p>Let's take a look at another example:</p>
+
+    <p class="example">
+      <i
+        class="fas fa-quote-left nav-icon"
+        style="color: #FF1493;"
+      ></i>
+      Your friend’s birthday is coming up. Write the text message
+      you send him with well wishes.
+      <i
+        class="fas fa-quote-right nav-icon"
+        style="color: #FF1493;"
+      ></i>
+    </p>
+
+    <p>In this example, you are required to</p>
+
+    <ul>
+      <li>Acknowledge that it is your friend's birthday,</li>
+      <li>Wish him well wishes.</li>
+    </ul>
+
+    <!-- Response -->
+    <div class="notification is-info shadow-lg">
+      <span
+        ><i
+          class="fas fa-bolt nav-icon"
+          style="color: #fd7e14;"
+        ></i>
+        Quick Answer</span
+      >
+      <ul>
+        <li>
+          Feliz cumpleaños, Juan, y espero que
+          <a
+            href="../tenses/subjunctive-mood.html"
+            target="_blank"
+            >tengas</a
+          >
+          un buen día.
+        </li>
+      </ul>
+    </div>
+
+    <div class="alert alert-danger" role="alert">
+      <bold>NB:</bold>
+      You will be penalized if you write more than one sentence.
+      Also, it is important to take note of the verb tense and
+      phrases required for each scenario.
+    </div>
+  </div>
+
+  <!-- Examples -->
+  <div id="examples" style="display:none;">
+    <p>This is examples</p>
+  </div>
+
+  <!-- Tips and Tricks -->
+  <div id="tipsandtricks" style="display:none;">
+    <div>
+      <p>
+        Directed Situations normally appear in Section I and are
+        worth a total of 30 points. Therefore, it is important
+        that we score as much points as we cam in this section.
+      </p>
+
+      <p>
+        These three tips wll teach you how to maximize on all
+        questions and how to avoid commom errors that sudents
+        make.
+      </p>
+
+      <br />
+      <div class="tip">
+        <h4>1. Keep Your Responses Short and Concise</h4>
+
+        <p>
+          When it comes to communication, sometimes less is more.
+          Sentence structure cannot be emphasized enough; short,
+          concise and simple sentences convey your ideas faster
+          whereas complex sentences may make your response unclear
+          an you risk making grammar erros and losing marks.
+        </p>
+
+        <div class="example">
+          <i
+            class="fas fa-quote-left nav-icon"
+            style="color: #FF1493;"
+          ></i
+          >Your aunt sent you an email inviting you to a concert.
+          Write a note declining the invitation.
+
+          <br /><br />
+          <div class="columns">
+            <div class="column">
+              <h6>Don't say</h6>
+
+              <i
+                class="fas fa-angle-double-right"
+                style="color: coral;"
+              ></i>
+              Mis padres van a celebrar su aniversario y voy a
+              tener que quedarme en la casa para cuidar a mis
+              hermanos así que no puedo ir.
+            </div>
+            <div class="column">
+              <h6>Say</h6>
+              <i
+                class="fas fa-angle-double-right"
+                style="color: coral;"
+              ></i>
+              No puedo ir porque tengo que cuidar a mis hermanos.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tip">
+        <br /><br />
+        <h4>2. Make Note of Which Verb Tense to Use</h4>
+      </div>
+    </div>
+  </div>
+
+  <!-- Exercises -->
+  <div id="exercises" style="display:none;">
+    <p>This is exercises</p>
+  </div>
+
+  <!-- Resources -->
+  <div id="resources" style="display:none;">
+    <p>This is resources</p>
+  </div>
+</div>

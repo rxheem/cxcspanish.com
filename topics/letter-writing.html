@@ -361,6 +361,75 @@
           <div class="column is-one-fifth">...</div>
           <div class="column">
             <h1 class="title is-4">Letter Writing</h1>
+
+            <div class="tabs">
+              <ul class="list-unstyled">
+                <li class="liOverview" class="is-active">
+                  <a class="btnOverview">Overview</a>
+                </li>
+                <li class="liExamples">
+                  <a class="btnExamples">Examples</a>
+                </li>
+                <li class="liTipsAndTricks">
+                  <a class="btnTipsAndTricks">Tips and Tricks</a>
+                </li>
+                <li class="liExercises">
+                  <a class="btnExercises">Exercises</a>
+                </li>
+                <li class="liResources">
+                  <a class="btnResources"
+                    ><i
+                      class="far fa-file-pdf inline-icon"
+                      aria-hidden="true"
+                    ></i
+                    >Resources</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="content">
+              <!-- Overview -->
+              <div id="overview"></div>
+
+              <!-- Examples -->
+              <div id="examples" style="display:none;"></div>
+
+              <!-- Tips and Tricks -->
+              <div id="tipsandtricks" style="display:none;"></div>
+
+              <!-- Exercises -->
+              <div id="exercises" style="display:none;"></div>
+
+              <!-- Resources -->
+              <div id="resources" style="display:none;"></div>
+            </div>
+
+            <div class="tabs is-hidden-desktop">
+              <ul>
+                <li class="liOverview" class="is-active">
+                  <a class="btnOverview">Overview</a>
+                </li>
+                <li class="liExamples">
+                  <a class="btnExamples">Examples</a>
+                </li>
+                <li class="liTipsAndTricks">
+                  <a class="btnTipsAndTricks">Tips and Tricks</a>
+                </li>
+                <li class="liExercises">
+                  <a class="btnExercises">Exercises</a>
+                </li>
+                <li class="liResources">
+                  <a class="btnResources"
+                    ><i
+                      class="far fa-file-pdf inline-icon"
+                      aria-hidden="true"
+                    ></i
+                    >Resources</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="column is-one-fifth">...</div>
         </div>
@@ -465,6 +534,77 @@
           $(".navbar-burger").toggleClass("is-active");
           $(".navbar-menu").toggleClass("is-active");
         });
+      });
+    </script>
+
+    <!-- Controls for the tabs -->
+    <script>
+      $(document).ready(function() {
+        // Function to remove active class  from all <li />
+        function removeActiveClass() {
+          $(".liOverview").removeClass("is-active");
+          $(".liResources").removeClass("is-active");
+          $(".liExercises").removeClass("is-active");
+          $(".liExamples").removeClass("is-active");
+          $(".liTipsAndTricks").removeClass("is-active");
+        }
+
+        // Function to hide all the content
+        function hideAllContent() {
+          $("#overview").hide();
+          $("#exercises").hide();
+          $("#resources").hide();
+          $("#examples").hide();
+          $("#tipsandtricks").hide();
+        }
+
+        // On click event for overview
+        $(".btnOverview").click(function() {
+          removeActiveClass();
+          hideAllContent();
+
+          $("#overview").show();
+          $(".liOverview").addClass("is-active");
+        });
+
+        // On click event for Examples
+        $(".btnExamples").click(function() {
+          removeActiveClass();
+          hideAllContent();
+
+          $("#examples").show();
+          $(".liExamples").addClass("is-active");
+        });
+
+        // On click event for Examples
+        $(".btnTipsAndTricks").click(function() {
+          removeActiveClass();
+          hideAllContent();
+
+          $("#tipsandtricks").show();
+          $(".liTipsAndTricks").addClass("is-active");
+        });
+
+        // On click event for Exercises
+        $(".btnExercises").click(function() {
+          removeActiveClass();
+          hideAllContent();
+
+          $("#exercises").show();
+          $(".liExercises").addClass("is-active");
+        });
+
+        // On click event for overview
+        $(".btnResources").click(function() {
+          hideAllContent();
+          removeActiveClass();
+
+          $("#resources").show();
+          $(".liResources").addClass("is-active");
+        });
+
+        // Triggers click on Overview tabs
+        $(".btnOverview").trigger("click");
       });
     </script>
   </body>

@@ -388,6 +388,11 @@ footer a:hover {
 }
 
 @media screen and (max-width: 600px) and (max-width: 840px) {
+
+  .is-centered-on-small {
+    text-align: center!important;
+  }
+
    .white-on-small {
      color: white!important;
    }
