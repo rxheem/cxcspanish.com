@@ -92,7 +92,10 @@
       rel="stylesheet"
       href="../assets/vendor/bulma-0.7.5 2/css/bulma-tooltip.css"
     />
-
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/css/bootstrap/bootstrap-grid.min.css"
+    />
     <script src="../assets/vendor/js/jquery-3.4.1.min.js"></script>
   </head>
   <body>
@@ -373,25 +376,23 @@
             <li><a href="/">Home</a></li>
             <li><a href="../exam-topics.html">Exam Topics</a></li>
             <li>
-              <a href="./directed-situations.html">Directed Situations</a>
+              <a href="./directed-situations.html">
+                <span class="is-hidden-mobile">Directed Situations</span>
+                <span class="is-hidden-desktop">Directed Sit..</span>
+              </a>
             </li>
           </ul>
         </nav>
         <!-- End breadcrumb -->
       </div>
       <br />
-      <div class="container">
-        <!-- Main columns -->
-        <div class="columns">
-          <!-- left colum -->
-          <div class="column is-one-fifth"></div>
-          <!-- End Left column -->
+      <div class="container is-fluid">
+        <h1 class="title is-4">Directed Situations</h1>
 
+        <div class="row">
           <!-- Main contnet with scrollable -->
-          <div class="column">
+          <div class="col">
             <div>
-              <h1 class="title is-4">Directed Situations</h1>
-
               <div class="tabs">
                 <ul class="list-unstyled">
                   <li class="liOverview" class="is-active">
@@ -420,19 +421,29 @@
 
               <div class="content">
                 <!-- Overview -->
-                <div id="overview"></div>
+                <div id="overview">
+                  <section></section>
+                </div>
 
                 <!-- Examples -->
-                <div id="examples" style="display:none;"></div>
+                <div id="examples" style="display:none;">
+                  <section></section>
+                </div>
 
                 <!-- Tips and Tricks -->
-                <div id="tipsandtricks" style="display:none;"></div>
+                <div id="tipsandtricks" style="display:none;">
+                  <section></section>
+                </div>
 
                 <!-- Exercises -->
-                <div id="exercises" style="display:none;"></div>
+                <div id="exercises" style="display:none;">
+                  <section></section>
+                </div>
 
                 <!-- Resources -->
-                <div id="resources" style="display:none;"></div>
+                <div id="resources" style="display:none;">
+                  <section></section>
+                </div>
               </div>
 
               <div class="tabs is-hidden-desktop">
@@ -463,12 +474,9 @@
             </div>
           </div>
 
-          <!-- End main contnet -->
-
           <!-- Right column  -->
-          <div class="column is-one-fifth"></div>
+          <div class="col"></div>
         </div>
-        <!-- End column-->
       </div>
 
       <!-- Controls for the tabs -->
