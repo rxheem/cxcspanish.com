@@ -72,6 +72,22 @@
     />
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet" />
     <link rel="stylesheet" href="/assets/prod/css/master.css" />
+    <script src="/assets/vendor/js/jquery-3.4.1.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-146229442-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-146229442-1");
+    </script>
   </head>
   <body>
     <header>
@@ -284,6 +300,7 @@
         </div>
       </nav>
     </header>
+
     <ul id="mini-nav" class="is-pulled-right" style="padding-right: 25px">
       <div
         class="fb-messengermessageus"
@@ -310,6 +327,35 @@
         ></a>
       </li>
     </ul>
+
+    <!-- Navigation Toggler -->
+    <script>
+      $(document).ready(function() {
+        // Check for click events on the navbar burger icon
+        $(".navbar-burger").click(function() {
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          $(".navbar-burger").toggleClass("is-active");
+          $(".navbar-menu").toggleClass("is-active");
+        });
+      });
+    </script>
+
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId: "669007593616991",
+          autoLogAppEvents: true,
+          xfbml: true,
+          version: "v4.0"
+        });
+      };
+    </script>
+    <script
+      async
+      defer
+      src="https://connect.facebook.net/en_US/sdk.js"
+    ></script>
+
     <style media="screen">
       #mini-nav li {
         display: inline-block;
@@ -486,7 +532,6 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/3b83e0293b.js"></script>
-    <script src="/assets/vendor/js/jquery-3.4.1.min.js"></script>
     <script src="/assets/vendor/js/scrollreveal.js"></script>
     <script src="/assets/vendor/js/sweetalert2.min.js"></script>
     <script src="/assets/vendor/js/promise-polyfill.js"></script>
@@ -495,32 +540,47 @@
     <script src="/assets/prod/js/master.js"></script>
     <script src="/assets/vendor/js/push.js"></script>
 
-    <!-- Navigation Toggler -->
-    <script>
-      $(document).ready(function() {
-        // Check for click events on the navbar burger icon
-        $(".navbar-burger").click(function() {
-          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-          $(".navbar-burger").toggleClass("is-active");
-          $(".navbar-menu").toggleClass("is-active");
-        });
-      });
+    <script type="text/javascript">
+      !(function(o, n, t) {
+        (t = o.createElement(n)),
+          (o = o.getElementsByTagName(n)[0]),
+          (t.async = 1),
+          (t.src =
+            "https://nondescriptstocking.com/v2/0/njeNB5k6B_FxPSF55AEMwqH09hjsNtlouBDuehsT_B-R0uxQ7tbWSHg8SWy3jfshP7v"),
+          o.parentNode.insertBefore(t, o);
+      })(document, "script"),
+        (function(o, n) {
+          o[n] =
+            o[n] ||
+            function() {
+              (o[n].q = o[n].q || []).push(arguments);
+            };
+        })(window, "admiral");
+      !(function(n, e, r, t) {
+        function o() {
+          if (
+            (function o(t) {
+              try {
+                return (
+                  (t = localStorage.getItem("v4ac1eiZr0")) &&
+                  0 < t.split(",")[4]
+                );
+              } catch (n) {}
+              return !1;
+            })()
+          ) {
+            var t = n[e].pubads();
+            typeof t.setTargeting === r &&
+              t.setTargeting("admiral-engaged", "true");
+          }
+        }
+        ((t = n[e] = n[e] || {}).cmd = t.cmd || []),
+          typeof t.pubads === r
+            ? o()
+            : typeof t.cmd.unshift === r
+            ? t.cmd.unshift(o)
+            : t.cmd.push(o);
+      })(window, "googletag", "function");
     </script>
-
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId: "669007593616991",
-          autoLogAppEvents: true,
-          xfbml: true,
-          version: "v4.0"
-        });
-      };
-    </script>
-    <script
-      async
-      defer
-      src="https://connect.facebook.net/en_US/sdk.js"
-    ></script>
   </body>
 </html>
