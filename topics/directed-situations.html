@@ -115,6 +115,75 @@
 
       gtag("config", "UA-146229442-1");
     </script>
+
+    <style media="screen">
+      .content {
+        width: 99%;
+      }
+
+      .centerplease {
+        margin: 0 auto;
+        max-width: 270px;
+        font-size: 40px;
+      }
+
+      .question {
+        position: relative;
+        background: #fff;
+        margin: 0;
+        padding: 0px 0px 0px 30px;
+        display: block;
+        width: 100%;
+        cursor: pointer;
+      }
+
+      .answers {
+        margin: 5px 0;
+        max-height: 0;
+        overflow: hidden;
+        z-index: -1;
+        position: relative;
+        opacity: 0;
+        -webkit-transition: 0.7s ease;
+        -moz-transition: 0.7s ease;
+        -o-transition: 0.7s ease;
+        transition: 0.7s ease;
+      }
+
+      .questions:checked ~ .answers {
+        max-height: 500px;
+        opacity: 1;
+        padding: 15px;
+      }
+
+      .plus {
+        position: absolute;
+        margin-left: 5px;
+        z-index: 5;
+        font-size: 1em;
+        line-height: 100%;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+        -webkit-transition: 0.3s ease;
+        -moz-transition: 0.3s ease;
+        -o-transition: 0.3s ease;
+        transition: 0.3s ease;
+      }
+
+      .questions:checked ~ .plus {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+
+      .questions {
+        display: none;
+      }
+    </style>
   </head>
   <body>
     <header id="header">
@@ -448,10 +517,15 @@
                     </p>
 
                     <p>Example, you are given the following scenario:</p>
-                    <p>
-                      “Your friend’s birthday is coming up. Write the text
-                      message you send him with well wishes.”
-                    </p>
+
+                    <div class="notification is-info">
+                      <p>
+                        "Your friend’s birthday is coming up. Write the text
+                        message you send him with well wishes."
+                      </p>
+                    </div>
+
+                    <p>In this example, you are required to:</p>
 
                     <ul>
                       <li>
@@ -461,24 +535,78 @@
                     </ul>
 
                     <h6 class="title" style="padding-top: 10px;">
-                      Suggested Response
+                      Suggested Responses
                     </h6>
 
-                    <p>
-                      <a href="#">Feliz cumpleaños</a> Juan y yo espero que
-                      <a href="#">tú tengas</a> un buen día.
-                    </p>
+                    <div>
+                      <input
+                        type="checkbox"
+                        id="example1"
+                        name="q"
+                        class="questions"
+                      />
+                      <div class="plus">
+                        <i
+                          style="color: coral;"
+                          class="fas fa-angle-double-right"
+                        ></i>
+                      </div>
+                      <label for="example1" class="question">
+                        <a href="#"> Feliz cumpleaños</a> Juan y yo espero que
+                        <a href="../tenses/subjunctive-mood.html">tú tengas</a>
+                        un buen día.</label
+                      >
+                      <div class="answers">
+                        <p>
+                          Happy birthday, Juan, and I hope you have a great day.
+                        </p>
+                      </div>
+                    </div>
 
-                    <p>
-                      <span style="color: purple!important;"
-                        ><b>Translation</b> </span
-                      >: Happy birthday, Juan, and I hope you have a great day.
-                    </p>
+                    <div>
+                      <input
+                        type="checkbox"
+                        id="example2"
+                        name="q"
+                        class="questions"
+                      />
+                      <div class="plus">
+                        <i
+                          style="color: coral;"
+                          class="fas fa-angle-double-right"
+                        ></i>
+                      </div>
+                      <label for="example2" class="question">
+                        ¡Feliz cumpleaños!</label
+                      >
 
-                    <div class="alert alert-danger">
+                      <div class="answers">
+                        <p>
+                          Happy birthday!
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="alert alert-danger" role="alert">
+                      <span
+                        ><i
+                          style="color: red;"
+                          class="fas fa-radiation nav-icon"
+                        ></i>
+                        <b>Important</b>
+                      </span>
+                      <p style="padding-top: 5px!important;">
+                        You may be penalised if you write more than one
+                        sentences.
+                      </p>
+                    </div>
+
+                    <p>Let's take a look at another example:</p>
+
+                    <div class="notification is-info">
                       <p>
-                        <strong>NB:</strong> You may be penalized if you write
-                        more than one sentences.
+                        "You wish to make a request to your teacher. Write a
+                        note making the request."
                       </p>
                     </div>
                   </section>
