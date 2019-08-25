@@ -99,6 +99,10 @@
       rel="stylesheet"
       href="../assets/vendor/css/bootstrap/bootstrap-4.3.1-alerts.css"
     />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/css/bootstrap/bootstrap-4.3.1-collapse.css"
+    />
     <script src="../assets/vendor/js/jquery-3.4.1.min.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -188,19 +192,14 @@
   <body>
     <header id="header">
       <nav
-        class="navbar has-shadow is-spaced"
+        class="navbar has-shadow is-spaced is-danger"
         role="navigation"
         aria-label="main navigation"
       >
         <div class="navbar-brand">
           <a class="navbar-item" href="/">
-            <h1 class="title is-5" style="padding-bottom: 5px;">
-              <img
-                style="max-height: 20px; padding-top:6px!important;"
-                src="../assets/kisspng-spanish-logos-translation-celebrando-la-navidad-5afdf35c4e3dd8.0682344115265923483205.png"
-                alt="Our logo"
-              />
-              CXC Spanish Guide
+            <h1 class="title is-5" style="padding-bottom: 1px;">
+              <span style="color: white!important;">CXC Spanish Guide</span>
             </h1>
           </a>
 
@@ -364,7 +363,7 @@
               <i
                 class="fas fa-users inline-icon"
                 aria-hidden="true"
-                style="color: coral"
+                style="color: white"
               ></i>
               About Us
             </a>
@@ -372,7 +371,7 @@
               <i
                 class="fas fa-chalkboard-teacher inline-icon"
                 aria-hidden="true"
-                style="color: rgb(255, 62, 229)"
+                style="color: white"
               ></i>
               Tutoring
             </a>
@@ -380,7 +379,7 @@
               <i
                 class="fas fa-id-badge inline-icon"
                 aria-hidden="true"
-                style="color: #44a5ff"
+                style="color: white"
               ></i>
               Contact
             </a>
@@ -474,14 +473,13 @@
       </div>
       <br />
       <div class="container is-fluid">
-        <h1 class="title is-4">Directed Situations</h1>
-
         <div class="row">
           <!-- left column -->
           <div class="col-sm-12 col-md-3 col-lg-3">...</div>
 
           <!-- Main contnet with scrollable -->
           <div class="col-sm-12 col-md-6 col-lg-6">
+            <h1 class="title is-4">Directed Situations</h1>
             <div>
               <div class="tabs">
                 <ul class="list-unstyled">
@@ -728,8 +726,12 @@
                             </li>
                           </ul>
 
-                          <br />
                           <h6>Suggested Responses</h6>
+
+                          <ul>
+                            <li></li>
+                            <li></li>
+                          </ul>
                         </div>
                       </div>
                     </div>
@@ -755,7 +757,20 @@
 
                       <div class="answers">
                         <div class="rounded-corner">
-                          <p></p>
+                          <p>
+                            This example is very straightforward. You care
+                            required to express the sad news that you just
+                            heard.
+                          </p>
+
+                          <h6>Suggested Responses</h6>
+
+                          <ul>
+                            <li>
+                              Mi tío es muy enfermo y esta en el hospital.
+                            </li>
+                            <li></li>
+                          </ul>
                         </div>
                       </div>
                     </div>
@@ -1103,7 +1118,7 @@
           });
 
           // Triggers click on Overview tabs
-          $(".btnExamples").trigger("click");
+          $(".btnOverview").trigger("click");
         });
       </script>
     </main>
