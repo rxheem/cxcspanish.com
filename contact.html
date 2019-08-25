@@ -42,6 +42,81 @@
     <link rel="stylesheet" href="/assets/vendor/css/modernizr.min.js" />
     <link rel="stylesheet" href="/assets/vendor/bulma-0.7.5 2/css/bulma.css" />
     <link rel="stylesheet" href="/assets/vendor/css/animate.css" />
+    <link
+      rel="stylesheet"
+      href="/assets/vendor/css/bootstrap/bootstrap-grid.min.css"
+    />
+    <style media="screen">
+      .content {
+        width: 99%;
+      }
+
+      .centerplease {
+        margin: 0 auto;
+        max-width: 270px;
+        font-size: 40px;
+      }
+
+      .question {
+        position: relative;
+        background: #fff;
+        margin: 0;
+        padding: 0px 0px 0px 30px;
+        padding-bottom: -3px !important;
+        display: inline-block !important;
+        display: block;
+        width: 100%;
+        cursor: pointer;
+      }
+
+      .answers {
+        background: #f2f2f2;
+        margin: 5px 0;
+        max-height: 0;
+        overflow: hidden;
+        z-index: -1;
+        position: relative;
+        opacity: 0;
+        -webkit-transition: 0.7s ease;
+        -moz-transition: 0.7s ease;
+        -o-transition: 0.7s ease;
+        transition: 0.7s ease;
+      }
+
+      .questions:checked ~ .answers {
+        max-height: 500px;
+        opacity: 1;
+        padding: 15px;
+      }
+
+      .plus {
+        position: absolute;
+        margin-left: 5px;
+        z-index: 5;
+        font-size: 1em;
+        line-height: 100%;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+        -webkit-transition: 0.3s ease;
+        -moz-transition: 0.3s ease;
+        -o-transition: 0.3s ease;
+        transition: 0.3s ease;
+      }
+
+      .questions:checked ~ .plus {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+
+      .questions {
+        display: none;
+      }
+    </style>
     <link rel="stylesheet" href="/assets/prod/css/master.css" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -60,21 +135,16 @@
     </script>
   </head>
   <body>
-    <header id="header">
+    <header>
       <nav
-        class="navbar has-shadow is-spaced"
+        class="navbar has-shadow is-spaced is-danger"
         role="navigation"
         aria-label="main navigation"
       >
         <div class="navbar-brand">
           <a class="navbar-item" href="/">
-            <h1 class="title is-5" style="padding-bottom: 5px;">
-              <img
-                style="max-height: 20px; padding-top:6px!important;"
-                src="/assets/kisspng-spanish-logos-translation-celebrando-la-navidad-5afdf35c4e3dd8.0682344115265923483205.png"
-                alt="Our logo"
-              />
-              CXC Spanish Guide
+            <h1 class="title is-5" style="padding-bottom: 1px;">
+              <span style="color: white!important;">CXC Spanish Guide</span>
             </h1>
           </a>
 
@@ -97,9 +167,9 @@
               <a class="navbar-link is-arrowless" href="/exam-topics.html">
                 Exam Topics
                 <i
-                  class="fa fa-link facebook-blue"
+                  class="fa fa-link "
                   aria-hidden="true"
-                  style="padding-left: 7px;"
+                  style="padding-left: 5px; color: white!important;"
                 ></i>
               </a>
 
@@ -246,7 +316,7 @@
               <i
                 class="fas fa-users inline-icon"
                 aria-hidden="true"
-                style="color: coral"
+                style="color: white"
               ></i>
               About Us
             </a>
@@ -254,7 +324,7 @@
               <i
                 class="fas fa-chalkboard-teacher inline-icon"
                 aria-hidden="true"
-                style="color: rgb(255, 62, 229)"
+                style="color: white"
               ></i>
               Tutoring
             </a>
@@ -262,7 +332,7 @@
               <i
                 class="fas fa-id-badge inline-icon"
                 aria-hidden="true"
-                style="color: #44a5ff"
+                style="color: white"
               ></i>
               Contact
             </a>
@@ -280,14 +350,14 @@
       ></div>
 
       <li>
-        <a target="_blank" href="https://www.instagram.com/csecspanish/"
+        <a target="_blank" href="https://www.instagram.com/cxcspanish/"
           ><i style="color: #E1306C!important;" class="fab fa-instagram"></i
         ></a>
       </li>
       <li>
         <a
           target="_blank"
-          href="https://www.facebook.com/csecspanishguide/?__tn__=%2Cd%2CP-R&eid=ARBp5b8r2d06OFKljjfcKxLq6dNjDPkODENJqB9yAsRgKUQHpmOrhWiLifsxgPnYtt5njC48bXpGjQii"
+          href="https://www.facebook.com/cxcspanishguide/?__tn__=%2Cd%2CP-R&eid=ARBp5b8r2d06OFKljjfcKxLq6dNjDPkODENJqB9yAsRgKUQHpmOrhWiLifsxgPnYtt5njC48bXpGjQii"
           ><i style="color: #3b5998!important;" class="fab fa-facebook"></i
         ></a>
       </li>
@@ -333,15 +403,100 @@
             <li><a href="/contact.html">Contact</a></li>
           </ul>
         </nav>
-        <div class="columns">
-          <div class="column"></div>
-          <div class="column is-one-third"></div>
+      </div>
+      <br />
+
+      <div class="container is-fluid">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <h1 class="title is-4">Contact Us</h1>
+
+            <p>
+              Whether you're a beginner or just looking for some refreshers, we
+              want to express gratitue for letting us be a part of your journey.
+            </p>
+
+            <br />
+            <p>
+              Before proceeding, read our
+              <a href="/FAQ.html">Frequently Asked Quesions</a> to see if your
+              question might of already been answered. These include:
+            </p>
+
+            <br />
+            <section>
+              <!-- FIrst Question -->
+              <div>
+                <input
+                  type="checkbox"
+                  id="question2"
+                  name="q"
+                  class="questions"
+                />
+                <div class="plus">
+                  <i
+                    style="color: #e0218a;"
+                    class="fas fa-angle-double-right"
+                  ></i>
+                </div>
+                <label for="question2" class="question"
+                  >What's the cost of this course?</label
+                >
+                <div class="answers">
+                  <p>
+                    All the lessons, guides are completely free of cost and no
+                    sign up is required.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Second Question -->
+              <div>
+                <input
+                  type="checkbox"
+                  id="question4"
+                  name="q"
+                  class="questions"
+                />
+                <div class="plus">
+                  <i
+                    style="color: #0abab5;"
+                    class="fas fa-angle-double-right"
+                  ></i>
+                </div>
+                <label for="question4" class="question"
+                  >Will it be helping me with my orals?</label
+                >
+                <div class="answers">
+                  <p>
+                    Yes, we will a review of the oral exam, practice exercises
+                    and
+                    <a
+                      style="color: purple!important;"
+                      href="/guides/pronunciation-tips.html"
+                      >pronunciation</a
+                    >
+                    and
+                    <a
+                      style="color: purple!important;"
+                      href="/guides/study-tips.html"
+                      >study tips</a
+                    >
+                    for orals.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            ...
+          </div>
         </div>
       </div>
     </main>
     <br />
 
-    <footer id="footer" class="footer has-background-dark is-centered-on-small">
+    <footer id="footer" class="footer has-background-dark">
       <h4>CXC Spanish Guide | Study Notes, Past Papers and Exercises</h4>
       <br />
       <div class="container">

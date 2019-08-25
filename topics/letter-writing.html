@@ -103,19 +103,14 @@
   <body>
     <header id="header">
       <nav
-        class="navbar has-shadow is-spaced"
+        class="navbar has-shadow is-spaced is-danger"
         role="navigation"
         aria-label="main navigation"
       >
         <div class="navbar-brand">
           <a class="navbar-item" href="/">
-            <h1 class="title is-5" style="padding-bottom: 5px;">
-              <img
-                style="max-height: 20px; padding-top:6px!important;"
-                src="../assets/kisspng-spanish-logos-translation-celebrando-la-navidad-5afdf35c4e3dd8.0682344115265923483205.png"
-                alt="Our logo"
-              />
-              CXC Spanish Guide
+            <h1 class="title is-5" style="padding-bottom: 1px;">
+              <span style="color: white!important;">CXC Spanish Guide</span>
             </h1>
           </a>
 
@@ -279,7 +274,7 @@
               <i
                 class="fas fa-users inline-icon"
                 aria-hidden="true"
-                style="color: coral"
+                style="color: white"
               ></i>
               About Us
             </a>
@@ -287,7 +282,7 @@
               <i
                 class="fas fa-chalkboard-teacher inline-icon"
                 aria-hidden="true"
-                style="color: rgb(255, 62, 229)"
+                style="color: white"
               ></i>
               Tutoring
             </a>
@@ -295,13 +290,25 @@
               <i
                 class="fas fa-id-badge inline-icon"
                 aria-hidden="true"
-                style="color: #44a5ff"
+                style="color: white"
               ></i>
               Contact
             </a>
           </div>
         </div>
       </nav>
+
+      <!-- Navigation Toggler -->
+      <script>
+        $(document).ready(function() {
+          // Check for click events on the navbar burger icon
+          $(".navbar-burger").click(function() {
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            $(".navbar-burger").toggleClass("is-active");
+            $(".navbar-menu").toggleClass("is-active");
+          });
+        });
+      </script>
     </header>
     <ul id="mini-nav" class="is-pulled-right" style="padding-right: 25px">
       <div
@@ -566,18 +573,6 @@
     <script src="../assets/vendor/js/sweetalert2.min.js"></script>
     <script src="../assets/vendor/js/promise-polyfill.js"></script>
     <script src="../assets/vendor/js/notify.min.js"></script>
-
-    <!-- Navigation Toggler -->
-    <script>
-      $(document).ready(function() {
-        // Check for click events on the navbar burger icon
-        $(".navbar-burger").click(function() {
-          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-          $(".navbar-burger").toggleClass("is-active");
-          $(".navbar-menu").toggleClass("is-active");
-        });
-      });
-    </script>
 
     <!-- Controls for the tabs -->
     <script>
