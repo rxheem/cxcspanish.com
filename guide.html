@@ -59,6 +59,14 @@
       rel="stylesheet"
       href="/assets/vendor/css/bootstrap/bootstrap-4.3.1-alerts.css"
     />
+    <link
+      rel="stylesheet"
+      href="/assets/vendor/css/bootstrap/bootstrap-grid.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/assets/vendor/css/bootstrap/bootstrap-4.3.1-badge.css"
+    />
     <link rel="stylesheet" href="/assets/prod/css/master.css" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -77,21 +85,22 @@
     </script>
   </head>
   <body>
-    <header id="header">
+    <style media="screen">
+      #mini-nav li {
+        display: inline-block;
+        padding: 5px 10px !important;
+      }
+    </style>
+    <header>
       <nav
-        class="navbar has-shadow is-spaced"
+        class="navbar has-shadow is-spaced is-danger"
         role="navigation"
         aria-label="main navigation"
       >
         <div class="navbar-brand">
           <a class="navbar-item" href="/">
-            <h1 class="title is-5" style="padding-bottom: 5px;">
-              <img
-                style="max-height: 20px; padding-top:6px!important;"
-                src="/assets/kisspng-spanish-logos-translation-celebrando-la-navidad-5afdf35c4e3dd8.0682344115265923483205.png"
-                alt="Our logo"
-              />
-              CXC Spanish Guide
+            <h1 class="title is-5" style="padding-bottom: 1px;">
+              <span style="color: white!important;">CXC Spanish Guide</span>
             </h1>
           </a>
 
@@ -114,9 +123,9 @@
               <a class="navbar-link is-arrowless" href="/exam-topics.html">
                 Exam Topics
                 <i
-                  class="fa fa-link facebook-blue"
+                  class="fa fa-link "
                   aria-hidden="true"
-                  style="padding-left: 7px;"
+                  style="padding-left: 5px; color: white!important;"
                 ></i>
               </a>
 
@@ -263,7 +272,7 @@
               <i
                 class="fas fa-users inline-icon"
                 aria-hidden="true"
-                style="color: coral"
+                style="color: white"
               ></i>
               About Us
             </a>
@@ -271,7 +280,7 @@
               <i
                 class="fas fa-chalkboard-teacher inline-icon"
                 aria-hidden="true"
-                style="color: rgb(255, 62, 229)"
+                style="color: white"
               ></i>
               Tutoring
             </a>
@@ -279,7 +288,7 @@
               <i
                 class="fas fa-id-badge inline-icon"
                 aria-hidden="true"
-                style="color: #44a5ff"
+                style="color: white"
               ></i>
               Contact
             </a>
@@ -297,14 +306,14 @@
       ></div>
 
       <li>
-        <a target="_blank" href="https://www.instagram.com/csecspanish/"
+        <a target="_blank" href="https://www.instagram.com/cxcspanish/"
           ><i style="color: #E1306C!important;" class="fab fa-instagram"></i
         ></a>
       </li>
       <li>
         <a
           target="_blank"
-          href="https://www.facebook.com/csecspanishguide/?__tn__=%2Cd%2CP-R&eid=ARBp5b8r2d06OFKljjfcKxLq6dNjDPkODENJqB9yAsRgKUQHpmOrhWiLifsxgPnYtt5njC48bXpGjQii"
+          href="https://www.facebook.com/cxcspanishguide/?__tn__=%2Cd%2CP-R&eid=ARBp5b8r2d06OFKljjfcKxLq6dNjDPkODENJqB9yAsRgKUQHpmOrhWiLifsxgPnYtt5njC48bXpGjQii"
           ><i style="color: #3b5998!important;" class="fab fa-facebook"></i
         ></a>
       </li>
@@ -332,15 +341,7 @@
     ></script>
 
     <br class="is-hidden-desktop" />
-    <br class="is-hidden-desktop" />
     <br />
-
-    <style media="screen">
-      #mini-nav li {
-        display: inline-block;
-        padding: 5px 10px !important;
-      }
-    </style>
 
     <main>
       <div class="container">
@@ -350,15 +351,127 @@
             <li><a href="/guide.html">Guide</a></li>
           </ul>
         </nav>
-        <div class="columns">
-          <div class="column is-one-quarter"></div>
-          <div class="column"></div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+            <div
+              style="background-color: #ffffff; padding: 20px 20px!important; border-radius: 10px; border: 1px solid black;"
+            >
+              <h1 class="title is-4">Popular Articles</h1>
+
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <ul style="padding-left: 20px!important;">
+                    <li style="padding-bottom: 15px;">
+                      <i
+                        style="color: #1b85e5!important;"
+                        class="far fa-file-alt"
+                      ></i>
+                      <a href="#" style="padding-left: 15px;"
+                        >Tongue Twisters in Spanish</a
+                      >
+                    </li>
+                    <li style="padding-bottom: 15px;">
+                      <i
+                        style="color: #1b85e5!important;"
+                        class="far fa-file-alt"
+                      ></i>
+                      <a href="#" style="padding-left: 15px;">Adverbs</a>
+                    </li>
+                    <li style="padding-bottom: 15px;">
+                      <i
+                        style="color: #1b85e5!important;"
+                        class="far fa-file-alt"
+                      ></i>
+                      <a href="#" style="padding-left: 15px;"
+                        >"Ser" vs "Estar"</a
+                      >
+                    </li>
+                    <li style="padding-bottom: 15px;">
+                      <i
+                        style="color: #1b85e5!important;"
+                        class="far fa-file-alt"
+                      ></i>
+                      <a href="#" style="padding-left: 15px;"
+                        >Dates in Spanish</a
+                      >
+                    </li>
+                    <li style="padding-bottom: 15px;">
+                      <i
+                        style="color: #1b85e5!important;"
+                        class="far fa-file-alt"
+                      ></i>
+                      <a href="#" style="padding-left: 15px;"
+                        >The Imperfect Subjunctive</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <ul style="padding-left: 20px!important;">
+                    <li style="padding-bottom: 15px;">
+                      <i
+                        style="color: #1b85e5!important;"
+                        class="far fa-file-alt"
+                      ></i>
+                      <a href="#" style="padding-left: 15px;"
+                        >The Spanish Alphabet</a
+                      >
+                    </li>
+                    <li style="padding-bottom: 15px;">
+                      <i
+                        style="color: #1b85e5!important;"
+                        class="far fa-file-alt"
+                      ></i>
+                      <a href="#" style="padding-left: 15px;"
+                        >"Ser" vs "Estar"</a
+                      >
+                      <span
+                        style="margin-left: 5px;"
+                        class="badge badge-success"
+                        >QUIZ</span
+                      >
+                    </li>
+                    <li style="padding-bottom: 15px;">
+                      <i
+                        style="color: #1b85e5!important;"
+                        class="far fa-file-alt"
+                      ></i>
+                      <a href="#" style="padding-left: 15px;"
+                        >Texting in Spanish</a
+                      >
+                    </li>
+                    <li style="padding-bottom: 15px;">
+                      <i
+                        style="color: #1b85e5!important;"
+                        class="far fa-file-alt"
+                      ></i>
+                      <a href="#" style="padding-left: 15px;"
+                        >How to Order Food in Spanish</a
+                      >
+                    </li>
+                    <li style="padding-bottom: 15px;">
+                      <i
+                        style="color: #1b85e5!important;"
+                        class="far fa-file-alt"
+                      ></i>
+                      <a href="#" style="padding-left: 15px;"
+                        >How to Flirt in Spanish</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+            ...
+          </div>
         </div>
       </div>
     </main>
     <br />
 
-    <footer id="footer" class="footer has-background-dark is-centered-on-small">
+    <footer id="footer" class="footer has-background-dark">
       <h4>CXC Spanish Guide | Study Notes, Past Papers and Exercises</h4>
       <br />
       <div class="container">
