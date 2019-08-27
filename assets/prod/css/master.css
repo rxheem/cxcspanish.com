@@ -1,4 +1,8 @@
 
+.answers p {
+  color: black!important;
+}
+
 .underline:hover {
   text-decoration: underline!important;
 }
