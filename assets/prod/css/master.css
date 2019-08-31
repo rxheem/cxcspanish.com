@@ -1,52 +1,59 @@
+.hidden {
+  display: none !important;
+}
+
+.hidden * {
+  display: none !important;
+}
 
 .answers p {
-  color: black!important;
+  color: black !important;
 }
 
 .underline:hover {
-  text-decoration: underline!important;
+  text-decoration: underline !important;
 }
 
 
-  caption {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    color: #6c757d;
-    text-align: left;
-    caption-side: bottom;
-  }
-
-     .scrollable {
-       overflow: auto!important;
-       height: 100px!important;
-     }
-
-     .rainbow-text {
-       background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
-       -webkit-background-clip: text;
-       -webkit-text-fill-color: transparent;
+caption {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  color: #6c757d;
+  text-align: left;
+  caption-side: bottom;
 }
 
-  .shadow-sm {
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
-  }
+.scrollable {
+  overflow: auto !important;
+  height: 100px !important;
+}
 
-  .shadow {
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-  }
+.rainbow-text {
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-  .shadow-lg {
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
-  }
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
 
-  .shadow-none {
-    box-shadow: none !important;
-  }
+.shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.shadow-lg {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+.shadow-none {
+  box-shadow: none !important;
+}
 
 .list-unstyled {
   padding-top: 10px;
-  list-style: none!important;
-  margin: 0px!important;
+  list-style: none !important;
+  margin: 0px !important;
 }
 
 /* Navigation icon padding */
@@ -117,11 +124,13 @@
 /* Master.css */
 
 .fa-linkedin-in {
-	display: none!important;
+  display: none !important;
 }
 
-p, span, li{
-		line-height: 20px;
+p,
+span,
+li {
+  line-height: 20px;
 }
 
 .sticky {
@@ -131,27 +140,29 @@ p, span, li{
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
+.sticky+.content {
   padding-top: 102px;
 }
 
 
 .inline-icon {
-	margin-right: 8px;
+  margin-right: 8px;
 }
 
 .nav-icon {
-	margin-right: 5px;
+  margin-right: 5px;
 }
 
 .breadcrumb {
-	background: transparent!important;
+  background: transparent !important;
 }
 
 /* Index.css */
 
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
-border: 0 !important;
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
+  border: 0 !important;
 }
 
 .navbar-item.is-mega {
@@ -210,10 +221,12 @@ border: 0 !important;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
+
 @keyframes blink {
   from {
     opacity: 1;
   }
+
   to {
     opacity: 0;
   }
@@ -228,6 +241,7 @@ border: 0 !important;
   animation-fill-mode: both;
   animation: load7 1.8s infinite ease-in-out;
 }
+
 .loader {
   color: #ffffff;
   font-size: 10px;
@@ -249,69 +263,76 @@ border: 0 !important;
   left: -3.5em;
   animation-delay: -0.32s;
 }
+
 .loader:after {
   left: 3.5em;
 }
 
 @keyframes load7 {
+
   0%,
   80%,
   100% {
     box-shadow: 0 2.5em 0 -1.3em;
   }
+
   40% {
     box-shadow: 0 2.5em 0 0;
   }
 }
 
 .midnight-blue {
-	color: #003366;
+  color: #003366;
 }
 
 /* https://www.w3schools.com/howto/howto_css_zoom_hover.asp */
 .zoom {
   padding: 50px;
   background-color: green;
-  transition: transform .2s; /* Animation */
+  transition: transform .2s;
+  /* Animation */
   width: 200px;
   height: 200px;
   margin: 0 auto;
 }
 
 .zoom:hover {
-  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.5);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 /* MAKE YOUTUBE VIDEOS RESPONSIVE - https://avexdesigns.com/responsive-youtube-embed/  */
 .video-container {
-position: relative;
-padding-bottom: 56.25%;
-padding-top: 30px; height: 0; overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
 }
 
 .video-container iframe,
 .video-container object,
 .video-container embed {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 
 @media (max-width: 767px) {
-    .text-sm-center {
-        text-align: center!important;
-    }
+  .text-sm-center {
+    text-align: center !important;
+  }
 }
 
 /* 6fb9f5 is a very nice color */
 
 .remove-btn {
-	padding: 0px!important;
-	border: none!important;
-	background: none!important;
+  padding: 0px !important;
+  border: none !important;
+  background: none !important;
 }
 
 
@@ -320,20 +341,25 @@ height: 100%;
 }
 
 @-webkit-keyframes spin {
-  0%  {-webkit-transform: rotate(0deg);}
-  100% {-webkit-transform: rotate(360deg);}
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 footer {
-	color: #c9c9c9 !important;
+  color: #c9c9c9 !important;
 }
 
 footer a {
-	color: #c9c9c9 !important;
+  color: #c9c9c9 !important;
 }
 
 footer a:hover {
-	color: white !important;
+  color: white !important;
 }
 
 .u-navbar {
@@ -392,48 +418,48 @@ footer a:hover {
 }
 
 .is-mobile-only {
-  visibility: hidden!important;
-       padding-left: 5px;
+  visibility: hidden !important;
+  padding-left: 5px;
 }
 
 @media screen and (max-width: 600px) and (max-width: 840px) {
 
   .is-centered-on-small {
-    text-align: center!important;
+    text-align: center !important;
   }
 
-   .white-on-small {
-     color: white!important;
-   }
+  .white-on-small {
+    color: white !important;
+  }
 
-   .is-mobile-only {
-     visibility: visible!important;
-     padding-left: 5px;
-   }
+  .is-mobile-only {
+    visibility: visible !important;
+    padding-left: 5px;
+  }
 
-   main {
-     margin: 0px 15px!important;
-   }
+  main {
+    margin: 0px 15px !important;
+  }
 
-    .scrollable {
-      height: auto;
-    }
- }
+  .scrollable {
+    height: auto;
+  }
+}
 
- footer li {
-   line-height: 25px!important;
- }
+footer li {
+  line-height: 25px !important;
+}
 
- .field {
-   padding: 5px 0px;
- }
+.field {
+  padding: 5px 0px;
+}
 
 a:hover {
-  text-decoration: none!important;
+  text-decoration: none !important;
 }
 
 
-  .pre-scrollable {
-    max-height: 340px;
-    overflow-y: scroll;
-  }
+.pre-scrollable {
+  max-height: 340px;
+  overflow-y: scroll;
+}
