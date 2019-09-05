@@ -1,29 +1,67 @@
-<div>
-  <input
-    type="checkbox"
-    id="question1"
-    name="q"
-    class="questions"
-  />
-  <div class="plus">+</div>
-  <label for="question1" class="question"
-    >What is CXC Spanish Online?</label
-  >
-  <div class="answers">
-    <p>
-      <a
-        style="color: brown!important;"
-        href="https://www.cxcspanish.com"
-        >CXC Spanish Online</a
+<div class="tabs">
+  <ul>
+    <li class="liOverview" class="is-active">
+      <a class="btnOverview">Overview</a>
+    </li>
+    <li class="liExamples"><a class="btnExamples">Examples</a></li>
+    <li class="liExercises">
+      <a class="btnExercises">Exercises</a>
+    </li>
+    <li class="liResources">
+      <a class="btnResources"
+        ><i
+          class="far fa-file-pdf inline-icon"
+          aria-hidden="true"
+        ></i
+        >Resources</a
       >
-      is a free online study guide for students sitting the CXC
-      Spanish exam at the CSEC level that aims to assist students
-      score higher in class on and pass their exams.
-    </p>
-
-    <p>
-      For more information, check out our
-      <a href="/about.html">About Us</a> page.
-    </p>
-  </div>
+    </li>
+  </ul>
 </div>
+
+  <h1 class="title is-4">Composition</h1>
+
+<div class="content">
+  <div id="overview"></div>
+
+  <div id="examples" style="display:none;"></div>
+
+  <div id="exercises" style="display:none;"></div>
+
+  <div id="resources" style="display:none;"></div>
+</div>
+
+<div class="tabs is-hidden-desktop">
+  <ul>
+    <li class="liOverview" class="is-active">
+      <a class="btnOverview">Overview</a>
+    </li>
+    <li class="liExamples"><a class="btnExamples">Examples</a></li>
+    <li class="liExercises">
+      <a class="btnExercises">Exercises</a>
+    </li>
+    <li class="liResources">
+      <a class="btnResources"
+        ><i
+          class="far fa-file-pdf inline-icon"
+          aria-hidden="true"
+        ></i
+        >Resources</a
+      >
+    </li>
+  </ul>
+</div>
+
+
+
+<nav class="breadcrumb" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="../exam-topics.html">Exam Topics</a></li>
+    <li>
+      <a href="https://www.csecespanol.co/topics/composition"
+        >Composition</a
+      >
+    </li>
+  </ul>
+</nav>
