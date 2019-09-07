@@ -152,6 +152,76 @@
       }
     </style>
     <script src="https://kit.fontawesome.com/3b83e0293b.js"></script>
+
+    <style media="screen">
+      .content {
+        width: 99%;
+      }
+
+      .centerplease {
+        margin: 0 auto;
+        max-width: 270px;
+        font-size: 40px;
+      }
+
+      .question {
+        position: relative;
+
+        margin: 0;
+        padding: 10px 5px 0px 40px;
+        display: block;
+        width: 100%;
+        cursor: pointer;
+      }
+
+      .answers {
+        background: #f2f2f2;
+        margin: 5px 0;
+        max-height: 0;
+        overflow: hidden;
+        z-index: -1;
+        position: relative;
+        opacity: 0;
+        -webkit-transition: 0.7s ease;
+        -moz-transition: 0.7s ease;
+        -o-transition: 0.7s ease;
+        transition: 0.7s ease;
+      }
+
+      .questions:checked ~ .answers {
+        max-height: 500px;
+        opacity: 1;
+        padding: 15px;
+      }
+
+      .plus {
+        position: absolute;
+        margin-left: 5px;
+        z-index: 5;
+        font-size: 2em;
+        line-height: 100%;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+        -webkit-transition: 0.3s ease;
+        -moz-transition: 0.3s ease;
+        -o-transition: 0.3s ease;
+        transition: 0.3s ease;
+      }
+
+      .questions:checked ~ .plus {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+
+      .questions {
+        display: none;
+      }
+    </style>
   </head>
 
   <body>
@@ -571,6 +641,274 @@
             </p>
 
             <br />
+          </div>
+        </div>
+
+        <br />
+        <h1 class="title is-4">Frequently Asked Questions</h1>
+
+        <div class="content animated fadeInUp">
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <div>
+                <input
+                  type="checkbox"
+                  id="question1"
+                  name="q"
+                  class="questions"
+                />
+                <div class="plus">+</div>
+                <label for="question1" class="question"
+                  >What is CXC Spanish Online?</label
+                >
+                <div class="answers">
+                  <p>
+                    <a
+                      style="color: brown!important;"
+                      href="https://www.cxcspanish.com"
+                      >CXC Spanish Online</a
+                    >
+                    is a free online study guide for students sitting the CXC
+                    Spanish exam at the CSEC level that aims to assist students
+                    score higher in class on and pass their exams.
+                  </p>
+
+                  <p>
+                    For more information, check out our
+                    <a href="/about.html">About Us</a> page.
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <input
+                  type="checkbox"
+                  id="question2"
+                  name="q"
+                  class="questions"
+                />
+                <div class="plus">+</div>
+                <label for="question2" class="question"
+                  >Are the courses free?</label
+                >
+                <div class="answers">
+                  <p>All the lessons, guides are completely free of cost.</p>
+                </div>
+              </div>
+
+              <div>
+                <input
+                  type="checkbox"
+                  id="question3"
+                  name="q"
+                  class="questions"
+                />
+                <div class="plus">+</div>
+                <label for="question3" class="question"
+                  >When will the website be ready?</label
+                >
+                <div class="answers">
+                  <p>
+                    We currenly project that we be live in the week of September
+                    8th.
+                  </p>
+
+                  <p>
+                    We're currently reviewing the material we currently have,
+                    which takes time and patience.
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <input
+                  type="checkbox"
+                  id="question4"
+                  name="q"
+                  class="questions"
+                />
+                <div class="plus">+</div>
+                <label for="question4" class="question"
+                  >Will it be helping me with my orals?</label
+                >
+                <div class="answers">
+                  <p>
+                    Yes, we will a review of the oral exam, practice exercises
+                    and
+                    <a
+                      style="color: purple!important;"
+                      href="/guides/pronunciation-tips.html"
+                      >pronunciation</a
+                    >
+                    and
+                    <a
+                      style="color: purple!important;"
+                      href="/guides/study-tips.html"
+                      >study tips</a
+                    >
+                    for orals.
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <input
+                  type="checkbox"
+                  id="question5"
+                  name="q"
+                  class="questions"
+                />
+                <div class="plus">+</div>
+                <label for="question5" class="question"
+                  >Will it focus on all aspects of the CSEC Spanish Syallabus.
+                </label>
+                <div class="answers">
+                  <p>
+                    We will be covering all
+                    <a style="color: purple!important;" href="/exam-topics.html"
+                      >exam topics</a
+                    >
+                    on Paper II and on Paper I.
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <input
+                  type="checkbox"
+                  id="question6"
+                  name="q"
+                  class="questions"
+                />
+                <div class="plus">+</div>
+                <label for="question6" class="question"
+                  >How often will you be posting activities?</label
+                >
+                <div class="answers">
+                  <p>
+                    Our initial releases will include more than enough
+                    activities to keep you busy. After that, we intend to start
+                    uploading new weekly starting in December.
+                  </p>
+                  <br />
+                  <p>
+                    It is important to note that while we will have interactive
+                    activities online, the majority of our activities will be in
+                    a free downloadable PDF format. You can check out all the
+                    activities we currently have
+                    <a href="/resources.html">here</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-12 col-lg-6">
+              <div>
+                <input
+                  type="checkbox"
+                  id="question7"
+                  name="q"
+                  class="questions"
+                />
+                <div class="plus">+</div>
+                <label for="question7" class="question"
+                  >Am I required to sign up?</label
+                >
+                <div class="answers">
+                  <p>
+                    No, you are not required to sign up to use our website and
+                    <a style="color: purple!important;" href="/resources.html"
+                      >download our material</a
+                    >
+                    .
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <input
+                  type="checkbox"
+                  id="question8"
+                  name="q"
+                  class="questions"
+                />
+                <div class="plus">+</div>
+                <label for="question8" class="question"
+                  >Will you guys be using official CXC past papers?</label
+                >
+                <div class="answers">
+                  <p>
+                    Yes, we will be using over <b>11 YEARS</b> worth of past
+                    papers, as well as lesson plans and guides.
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <input
+                  type="checkbox"
+                  id="question9"
+                  name="q"
+                  class="questions"
+                />
+                <div class="plus">+</div>
+                <label for="question9" class="question"
+                  >Will there be etests as well, similar to CXC's online
+                  etest?</label
+                >
+                <div class="answers">
+                  Yes, check it out
+                  <a style="color: purple!important;" href="/etest.html"
+                    >here.</a
+                  >
+                </div>
+              </div>
+
+              <div>
+                <input
+                  type="checkbox"
+                  id="question10"
+                  name="q"
+                  class="questions"
+                />
+                <div class="plus">+</div>
+                <label for="question10" class="question"
+                  >Where are we based?</label
+                >
+                <div class="answers">
+                  <p>We are a small team based in Kingston, Jamaica.</p>
+                </div>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="question11"
+                  name="q"
+                  class="questions"
+                />
+                <div class="plus">+</div>
+                <label for="question11" class="question"
+                  >Apart from the syllabus topics, what other additional
+                  learning content will be posted?</label
+                >
+                <div class="answers">
+                  <p>
+                    We will be postinig a lot of additional learning content,
+                    such as
+                  </p>
+
+                  <ul>
+                    <li>Study tips</li>
+                    <li>At the airport scenarios</li>
+                    <li>Greetings and common courtesy</li>
+                    <li>Food, food and more food! <i class="em em-yum"></i></li>
+                    <li>Spanish Cultures</li>
+                    <li>At the home</li>
+                    <li>Asking for directions</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
