@@ -1,3 +1,7 @@
+.styled-ul li {
+  list-style: disc!important;
+  padding-bottom: 1.5em;
+}
 
 .container {
   width: 100%;
