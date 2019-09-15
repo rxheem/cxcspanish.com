@@ -22,7 +22,6 @@
       name="robots"
       content="archive,follow,imageindex,index,odp,snippet,translate"
     />
-    <meta name="theme-color" content="#ff3860" />
     <meta name="Classification" content="Education" />
     <meta name="designer" content="Raheem McDonald" />
     <meta name="copyright" content="Raheem McDonald | Language Learners" />
@@ -56,12 +55,6 @@
       name="og:title"
       content="CXC Spanish | Guide, Past Papers and Exercises"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css"
-      integrity="sha256-ujE/ZUB6CMZmyJSgQjXGCF4sRRneOimQplBVLu8OU5w="
-      crossorigin="anonymous"
-    />
     <title>CXC Spanish | Guide, Past Papers and Exercises</title>
     <link
       rel="shortcut icon"
@@ -85,7 +78,104 @@
       rel="stylesheet"
       href="./assets/vendor/css/bootstrap/bootstrap-4.3.1-alerts.css"
     />
-    <link rel="stylesheet" href="./assets/prod/css/master.css" />
+    <link rel="stylesheet" href="/assets/prod/css/master.css" />
+    <link
+      rel="stylesheet"
+      href="/assets/vendor/bulma-0.7.5 2/extensions/css/bulma-carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/bulma-0.7.5 2/extensions/css/bulma-timeline.css"
+    />
+
+    <style media="screen">
+      .content {
+        width: 99%;
+      }
+
+      .centerplease {
+        margin: 0 auto;
+        max-width: 270px;
+        font-size: 40px;
+      }
+
+      .question {
+        position: relative;
+        margin: 0;
+        padding: 0px 0px 0px 30px;
+        display: block;
+        width: 100%;
+        cursor: pointer;
+      }
+
+      .answers {
+        margin: 5px 0;
+        color: black !important;
+        max-height: 0;
+        overflow: hidden;
+        z-index: -1;
+        position: relative;
+        opacity: 0;
+        -webkit-transition: 0.7s ease;
+        -moz-transition: 0.7s ease;
+        -o-transition: 0.7s ease;
+        transition: 0.7s ease;
+      }
+
+      .answers {
+        background: #f2f2f2;
+        color: black !important;
+        margin: 5px 0;
+        max-height: 0;
+        overflow: hidden;
+        z-index: -1;
+        position: relative;
+        opacity: 0;
+        -webkit-transition: 0.7s ease;
+        -moz-transition: 0.7s ease;
+        -o-transition: 0.7s ease;
+        transition: 0.7s ease;
+      }
+
+      .questions:checked ~ .answers {
+        max-height: 500px;
+        opacity: 1;
+        padding: 15px;
+      }
+
+      .plus {
+        position: absolute;
+        margin-left: 5px;
+        z-index: 5;
+        font-size: 1em;
+        line-height: 100%;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+        -webkit-transition: 0.3s ease;
+        -moz-transition: 0.3s ease;
+        -o-transition: 0.3s ease;
+        transition: 0.3s ease;
+      }
+
+      .questions:checked ~ .plus {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+
+      .questions p {
+        color: black !important;
+      }
+
+      .questions {
+        display: none;
+      }
+    </style>
+
     <script src="./assets/vendor/js/jquery-3.4.1.min.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -148,80 +238,10 @@
 
     <style media="screen">
       body {
-        background-color: #f7f7f7;
+        background-color: #f7f7f7 !important;
       }
     </style>
     <script src="https://kit.fontawesome.com/3b83e0293b.js"></script>
-
-    <style media="screen">
-      .content {
-        width: 99%;
-      }
-
-      .centerplease {
-        margin: 0 auto;
-        max-width: 270px;
-        font-size: 40px;
-      }
-
-      .question {
-        position: relative;
-
-        margin: 0;
-        padding: 10px 5px 0px 40px;
-        display: block;
-        width: 100%;
-        cursor: pointer;
-      }
-
-      .answers {
-        background: #f2f2f2;
-        margin: 5px 0;
-        max-height: 0;
-        overflow: hidden;
-        z-index: -1;
-        position: relative;
-        opacity: 0;
-        -webkit-transition: 0.7s ease;
-        -moz-transition: 0.7s ease;
-        -o-transition: 0.7s ease;
-        transition: 0.7s ease;
-      }
-
-      .questions:checked ~ .answers {
-        max-height: 500px;
-        opacity: 1;
-        padding: 15px;
-      }
-
-      .plus {
-        position: absolute;
-        margin-left: 5px;
-        z-index: 5;
-        font-size: 2em;
-        line-height: 100%;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        -o-user-select: none;
-        user-select: none;
-        -webkit-transition: 0.3s ease;
-        -moz-transition: 0.3s ease;
-        -o-transition: 0.3s ease;
-        transition: 0.3s ease;
-      }
-
-      .questions:checked ~ .plus {
-        -webkit-transform: rotate(45deg);
-        -moz-transform: rotate(45deg);
-        -o-transform: rotate(45deg);
-        transform: rotate(45deg);
-      }
-
-      .questions {
-        display: none;
-      }
-    </style>
   </head>
 
   <body>
@@ -253,6 +273,7 @@
       page_id="105703077445673"
     ></div>
 
+    <!-- Header -->
     <header>
       <nav
         class="navbar has-shadow is-spaced is-danger"
@@ -284,11 +305,6 @@
             <div class="navbar-item has-dropdown is-hoverable">
               <a class="navbar-link is-arrowless" href="/exam-topics.html">
                 Exam Topics
-                <i
-                  class="fa fa-link "
-                  aria-hidden="true"
-                  style="padding-left: 5px; color: white!important;"
-                ></i>
               </a>
 
               <div class="navbar-dropdown">
@@ -466,6 +482,7 @@
         </div>
       </nav>
     </header>
+    <br />
 
     <style media="screen">
       #mini-nav li {
@@ -514,13 +531,9 @@
             <li><a href="/"></a></li>
           </ul>
         </nav>
-      </div>
-      <br />
-      <br />
 
-      <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <div class="col-xs-6 col-sm-6 col-md-4 col-lg-6 col-xl-6">
             <h3 class="title is-4">We're Almost There</h3>
 
             <p>
@@ -585,338 +598,108 @@
                 >Articles and Discussions
               </li>
             </ul>
-            <br class="is-hidden-desktop" />
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-            <h3 class="title is-4">Need more info?</h3>
-            <p>
-              <i
-                style="color: coral;"
-                class="fas fa-caret-right inline-icon"
-              ></i
-              >Have questions? Read our
-              <a href="/FAQ.html">FAQ.</a>
-            </p>
 
             <br />
-            <p>Join our mailing list! and get</p>
-
-            <ul style="padding-top: 20px;">
-              <li
-                style="margin-left: 15px!important; margin-bottom: 10px!important;"
-              >
-                <i
-                  style="color: blue"
-                  ;
-                  class="fas fa-angle-double-right inline-icon"
-                ></i>
-                free weekly past paper exercises
-              </li>
-              <li
-                style="margin-left: 15px!important; margin-bottom: 10px!important;"
-              >
-                <i
-                  style="color: grey"
-                  ;
-                  class="fas fa-angle-double-right inline-icon"
-                ></i>
-                free weekly study notes
-              </li>
-              <li
-                style="margin-left: 15px!important; margin-bottom: 10px!important;"
-              >
-                <i
-                  style="color: purple"
-                  ;
-                  class="fas fa-angle-double-right inline-icon"
-                ></i>
-                instantly notified about new posts
-              </li>
-            </ul>
-
-            <p style="margin-top: 20px;">
-              Send us an email at
-              <a href="mailto:hola@cxcspanish.com">hola@cxcspanish.com</a> with
-              additional inquiries and know when we go live.
-            </p>
-
-            <br />
-          </div>
-        </div>
-
-        <br />
-        <h1 class="title is-4">Frequently Asked Questions</h1>
-
-        <div class="content animated fadeInUp">
-          <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-6">
-              <div>
-                <input
-                  type="checkbox"
-                  id="question1"
-                  name="q"
-                  class="questions"
-                />
-                <div class="plus">+</div>
-                <label for="question1" class="question"
-                  >What is CXC Spanish Online?</label
-                >
-                <div class="answers">
-                  <p>
-                    <a
-                      style="color: brown!important;"
-                      href="https://www.cxcspanish.com"
-                      >CXC Spanish Online</a
-                    >
-                    is a free online study guide for students sitting the CXC
-                    Spanish exam at the CSEC level that aims to assist students
-                    score higher in class on and pass their exams.
-                  </p>
-
-                  <p>
-                    For more information, check out our
-                    <a href="/about.html">About Us</a> page.
-                  </p>
-                </div>
-              </div>
-
-              <div>
-                <input
-                  type="checkbox"
-                  id="question2"
-                  name="q"
-                  class="questions"
-                />
-                <div class="plus">+</div>
-                <label for="question2" class="question"
-                  >Are the courses free?</label
-                >
-                <div class="answers">
-                  <p>All the lessons, guides are completely free of cost.</p>
-                </div>
-              </div>
-
-              <div>
-                <input
-                  type="checkbox"
-                  id="question3"
-                  name="q"
-                  class="questions"
-                />
-                <div class="plus">+</div>
-                <label for="question3" class="question"
-                  >When will the website be ready?</label
-                >
-                <div class="answers">
-                  <p>
-                    We currenly project that we be live in the week of September
-                    8th.
-                  </p>
-
-                  <p>
-                    We're currently reviewing the material we currently have,
-                    which takes time and patience.
-                  </p>
-                </div>
-              </div>
-
-              <div>
-                <input
-                  type="checkbox"
-                  id="question4"
-                  name="q"
-                  class="questions"
-                />
-                <div class="plus">+</div>
-                <label for="question4" class="question"
-                  >Will it be helping me with my orals?</label
-                >
-                <div class="answers">
-                  <p>
-                    Yes, we will a review of the oral exam, practice exercises
-                    and
-                    <a
-                      style="color: purple!important;"
-                      href="/guides/pronunciation-tips.html"
-                      >pronunciation</a
-                    >
-                    and
-                    <a
-                      style="color: purple!important;"
-                      href="/guides/study-tips.html"
-                      >study tips</a
-                    >
-                    for orals.
-                  </p>
-                </div>
-              </div>
-
-              <div>
-                <input
-                  type="checkbox"
-                  id="question5"
-                  name="q"
-                  class="questions"
-                />
-                <div class="plus">+</div>
-                <label for="question5" class="question"
-                  >Will it focus on all aspects of the CSEC Spanish Syallabus.
-                </label>
-                <div class="answers">
-                  <p>
-                    We will be covering all
-                    <a style="color: purple!important;" href="/exam-topics.html"
-                      >exam topics</a
-                    >
-                    on Paper II and on Paper I.
-                  </p>
-                </div>
-              </div>
-
-              <div>
-                <input
-                  type="checkbox"
-                  id="question6"
-                  name="q"
-                  class="questions"
-                />
-                <div class="plus">+</div>
-                <label for="question6" class="question"
-                  >How often will you be posting activities?</label
-                >
-                <div class="answers">
-                  <p>
-                    Our initial releases will include more than enough
-                    activities to keep you busy. After that, we intend to start
-                    uploading new weekly starting in December.
-                  </p>
-                  <br />
-                  <p>
-                    It is important to note that while we will have interactive
-                    activities online, the majority of our activities will be in
-                    a free downloadable PDF format. You can check out all the
-                    activities we currently have
-                    <a href="/resources.html">here</a>
-                  </p>
-                </div>
+            <div>
+              <input type="checkbox" id="11111" name="q" class="questions" />
+              <div class="plus">+</div>
+              <label for="11111" class="question">Are the courses free?</label>
+              <div class="answers">
+                <p>
+                  All the lessons, guides are completely free of cost.
+                </p>
               </div>
             </div>
 
-            <div class="col-sm-12 col-md-12 col-lg-6">
-              <div>
-                <input
-                  type="checkbox"
-                  id="question7"
-                  name="q"
-                  class="questions"
-                />
-                <div class="plus">+</div>
-                <label for="question7" class="question"
-                  >Am I required to sign up?</label
-                >
-                <div class="answers">
-                  <p>
-                    No, you are not required to sign up to use our website and
-                    <a style="color: purple!important;" href="/resources.html"
-                      >download our material</a
-                    >
-                    .
-                  </p>
-                </div>
-              </div>
-
-              <div>
-                <input
-                  type="checkbox"
-                  id="question8"
-                  name="q"
-                  class="questions"
-                />
-                <div class="plus">+</div>
-                <label for="question8" class="question"
-                  >Will you guys be using official CXC past papers?</label
-                >
-                <div class="answers">
-                  <p>
-                    Yes, we will be using over <b>11 YEARS</b> worth of past
-                    papers, as well as lesson plans and guides.
-                  </p>
-                </div>
-              </div>
-
-              <div>
-                <input
-                  type="checkbox"
-                  id="question9"
-                  name="q"
-                  class="questions"
-                />
-                <div class="plus">+</div>
-                <label for="question9" class="question"
-                  >Will there be etests as well, similar to CXC's online
-                  etest?</label
-                >
-                <div class="answers">
-                  Yes, check it out
-                  <a style="color: purple!important;" href="/etest.html"
-                    >here.</a
+            <div>
+              <input type="checkbox" id="22222" name="q" class="questions" />
+              <div class="plus">+</div>
+              <label for="22222" class="question"
+                >Am I required to sign up?</label
+              >
+              <div class="answers">
+                <p>
+                  No, you are not required to sign up to use our website and
+                  <a style="color: purple!important;" href="/resources.html"
+                    >download our material.</a
                   >
-                </div>
+                  You are required to submit a request to joing our
+                  <a href="/mailing-list.html">mailing list</a>
+                </p>
               </div>
+            </div>
 
-              <div>
-                <input
-                  type="checkbox"
-                  id="question10"
-                  name="q"
-                  class="questions"
-                />
-                <div class="plus">+</div>
-                <label for="question10" class="question"
-                  >Where are we based?</label
-                >
-                <div class="answers">
-                  <p>We are a small team based in Kingston, Jamaica.</p>
-                </div>
-              </div>
-              <div>
-                <input
-                  type="checkbox"
-                  id="question11"
-                  name="q"
-                  class="questions"
-                />
-                <div class="plus">+</div>
-                <label for="question11" class="question"
-                  >Apart from the syllabus topics, what other additional
-                  learning content will be posted?</label
-                >
-                <div class="answers">
+            <br />
+            <p>Read our <a href="/FAQ.html">FAQ</a>.</p>
+            <br class="is-hidden-desktop" />
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-4 col-lg-6 col-xl-6">
+            <br class="is-hidden-desktop" />
+            <h3 class="title is-4">Timeline</h3>
+
+            <div class="timeline is-ltr">
+              <header class="timeline-header">
+                <span class="tag is-medium is-info">Start</span>
+              </header>
+              <div class="timeline-item is-info">
+                <div class="timeline-marker is-info"></div>
+                <div class="timeline-content">
+                  <p class="heading">July 2019</p>
                   <p>
-                    We will be postinig a lot of additional learning content,
-                    such as
+                    Launched website with countdown and information for the
+                    website.
                   </p>
-
-                  <ul>
-                    <li>Study tips</li>
-                    <li>At the airport scenarios</li>
-                    <li>Greetings and common courtesy</li>
-                    <li>Food, food and more food! <i class="em em-yum"></i></li>
-                    <li>Spanish Cultures</li>
-                    <li>At the home</li>
-                    <li>Asking for directions</li>
-                  </ul>
                 </div>
               </div>
+              <div class="timeline-item is-info">
+                <div class="timeline-marker is-info"></div>
+                <div class="timeline-content">
+                  <p class="heading">September 13, 2019</p>
+                  <p>
+                    We sent out our pre-release email with Directed Sitautions
+                    exercise booklets.
+                  </p>
+                </div>
+              </div>
+
+              <header class="timeline-header">
+                <span class="tag is-info">October</span>
+              </header>
+              <div class="timeline-item is-danger">
+                <div class="timeline-marker is-danger is-icon">
+                  <i class="fa fa-flag"></i>
+                </div>
+                <div class="timeline-content">
+                  <p class="heading">October 2019</p>
+                  <p>
+                    Official launch of CXC Spanish Online website will all
+                    content available.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item is-info">
+                <div class="timeline-marker is-info"></div>
+                <div class="timeline-content">
+                  <p class="heading">mid-October 2019</p>
+                  <p>
+                    We will start our weekly emails with study notes, tips and
+                    exercise booklets.
+                  </p>
+                </div>
+              </div>
+              <header class="timeline-header">
+                <span class="tag is-medium is-info">Tutorials</span>
+              </header>
             </div>
           </div>
         </div>
       </div>
+      <br />
     </main>
     <br />
 
+    <!-- Footer -->
     <footer id="footer" class="footer has-background-dark">
-      <h4>CXC Spanish Guide | Study Notes, Past Papers and Exercises</h4>
       <br />
       <div class="container">
         <div class="columns">
@@ -951,16 +734,12 @@
             </ul>
           </div>
           <div class="column">
-            <h3 class="title is-6 has-text-white">AWESOME TOOLS WE USE</h3>
+            <h3 class="title is-6 has-text-white">TOOLS WE USE</h3>
 
             <ul>
               <li>
                 <a target="_blank" href="https://www.spanishdict.com"
                   >SpanishDict
-                  <i
-                    style="color: gold!important"
-                    class="nav-icon inline-icon fas fa-star"
-                  ></i>
                 </a>
               </li>
               <li><a target="_blank" href="https://www.cxc.org">CXC</a></li>
@@ -1009,6 +788,7 @@
               <li><a href="/terms-of-use.html">Terms of Use</a></li>
               <li><a href="/privacy-policy.html">Privacy Policy</a></li>
               <li><a href="/contact.html">Contact Us</a></li>
+              <li><a href="/mailing-list.html">Join our Mailing List</a></li>
               <li><a href="/sitemap.xml">View Sitemap</a></li>
             </ul>
           </div>
@@ -1020,6 +800,7 @@
         <a href="/">Language Learning Co.</a>
       </div>
     </footer>
+
     <script src="/assets/vendor/js/scrollreveal.js"></script>
     <script src="/assets/vendor/js/sweetalert2.min.js"></script>
     <script src="/assets/vendor/js/promise-polyfill.js"></script>
@@ -1027,5 +808,6 @@
     <script src="/assets/vendor/js/js-cookie.min.js"></script>
     <script src="/assets/prod/js/master.js"></script>
     <script src="/assets/vendor/js/push.js"></script>
+    <script src="/assets/vendor/bulma-0.7.5 2/extensions/js/bulma-carousel.js"></script>
   </body>
 </html>
