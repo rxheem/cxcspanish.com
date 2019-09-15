@@ -1,3 +1,7 @@
+.black {
+  color: black!important;
+}
+
 .styled-ul li {
   list-style: disc!important;
   padding-bottom: 1.5em;
