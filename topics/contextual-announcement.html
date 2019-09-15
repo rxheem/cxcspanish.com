@@ -75,7 +75,18 @@
       name="og:description"
       content="As the name suggests, Contextual Announcements requires you to write a short announcement in Spanish on a given topic."
     />
-
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/css/bootstrap/bootstrap-grid.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/css/bootstrap/bootstrap-4.3.1-alerts.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/css/bootstrap/bootstrap-4.3.1-collapse.css"
+    />
     <title>
       Contextual Announcements | CXC Spanish Guide
     </title>
@@ -293,6 +304,14 @@
               ></i>
               Tutoring
             </a>
+            <a class="navbar-item" href="../FAQ.html">
+              <i
+                class="far fa-comment  inline-icon"
+                aria-hidden="true"
+                style="color: white"
+              ></i>
+              FAQ
+            </a>
             <a class="navbar-item" href="../contact.html">
               <i
                 class="fas fa-id-badge inline-icon"
@@ -317,43 +336,7 @@
         });
       </script>
     </header>
-    <ul id="mini-nav" class="is-pulled-right" style="padding-right: 25px">
-      <li>
-        <a target="_blank" href="https://www.instagram.com/csecspanish/"
-          ><i style="color: #E1306C!important;" class="fab fa-instagram"></i
-        ></a>
-      </li>
-      <li>
-        <a
-          target="_blank"
-          href="https://www.facebook.com/csecspanishguide/?__tn__=%2Cd%2CP-R&eid=ARBp5b8r2d06OFKljjfcKxLq6dNjDPkODENJqB9yAsRgKUQHpmOrhWiLifsxgPnYtt5njC48bXpGjQii"
-          ><i style="color: #3b5998!important;" class="fab fa-facebook"></i
-        ></a>
-      </li>
 
-      <li>
-        <a target="_blank" href="mailto:hola@cxcspanish.com"
-          ><i style="color: grey!important" class="fas fa-envelope"></i
-        ></a>
-      </li>
-    </ul>
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId: "669007593616991",
-          autoLogAppEvents: true,
-          xfbml: true,
-          version: "v4.0"
-        });
-      };
-    </script>
-    <script
-      async
-      defer
-      src="https://connect.facebook.net/en_US/sdk.js"
-    ></script>
-
-    <br class="is-hidden-desktop" />
     <br class="is-hidden-desktop" />
     <br />
 
@@ -380,22 +363,100 @@
             </li>
           </ul>
         </nav>
-        <div class="columns">
-          <div class="column is-one-fifth">...</div>
-          <div class="column">
+
+        <div class="row">
+          <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 is-hidden-mobile">
+            <aside class="menu">
+              <p class="menu-label">
+                General
+              </p>
+              <ul class="menu-list">
+                <li><a class="is-active">Overview</a></li>
+                <li><a>Examples</a></li>
+              </ul>
+              <p class="menu-label">
+                e-Tests
+              </p>
+              <ul class="menu-list">
+                <li><a>View All</a></li>
+                <li>
+                  <ul>
+                    <li>
+                      <a
+                        ><i class="fas fa-pencil-alt nav-icon-10"></i>Past
+                        Paper</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        ><i class="fas fa-pencil-alt nav-icon-10"></i>Past
+                        Paper</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        ><i class="fas fa-pencil-alt nav-icon-10"></i>Past
+                        Paper</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        ><i class="fas fa-pencil-alt nav-icon-10"></i>Past
+                        Paper</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        ><i class="fas fa-pencil-alt nav-icon-10"></i>Past
+                        Paper</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        ><i class="fas fa-pencil-alt nav-icon-11"></i>Past
+                        Paper</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <p class="menu-label">
+                Resources
+              </p>
+              <ul class="menu-list">
+                <li>
+                  <a><i class="fas fa-swatchbook nav-icon-15"></i>Booklet</a>
+                </li>
+                <li>
+                  <a><i class="far fa-file-alt nav-icon-17"></i>Past Papers</a>
+                </li>
+                <li>
+                  <a><i class="fas fa-book-open nav-icon-12"></i>Worksheets</a>
+                </li>
+              </ul>
+              <p class="menu-label">
+                Contribute
+              </p>
+              <ul class="menu-list">
+                <li>
+                  <a
+                    ><i class="far fa-comment nav-icon-10"></i>Suggest an
+                    Edit</a
+                  >
+                </li>
+              </ul>
+            </aside>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
             <h1 class="title is-4">Contextual Announcements</h1>
 
-            <div class="tabs">
-              <ul class="list-unstyled">
+            <!-- Tabs -->
+            <nav class="tabs">
+              <ul>
                 <li class="liOverview" class="is-active">
                   <a class="btnOverview">Overview</a>
                 </li>
-                <li class="liExamples">
-                  <a class="btnExamples">Examples</a>
-                </li>
-                <li class="liTipsAndTricks">
-                  <a class="btnTipsAndTricks">Tips and Tricks</a>
-                </li>
+                <li class="liExamples"><a class="btnExamples">Examples</a></li>
                 <li class="liExercises">
                   <a class="btnExercises">Exercises</a>
                 </li>
@@ -409,36 +470,27 @@
                   >
                 </li>
               </ul>
-            </div>
+            </nav>
 
             <div class="content">
-              <!-- Overview -->
-              <div id="overview"></div>
+              <div id="overview">
+                <p>...</p>
+              </div>
 
-              <!-- Examples -->
               <div id="examples" style="display:none;"></div>
 
-              <!-- Tips and Tricks -->
-              <div id="tipsandtricks" style="display:none;"></div>
-
-              <!-- Exercises -->
               <div id="exercises" style="display:none;"></div>
 
-              <!-- Resources -->
               <div id="resources" style="display:none;"></div>
             </div>
 
+            <!-- Lower tabs -->
             <div class="tabs is-hidden-desktop">
               <ul>
                 <li class="liOverview" class="is-active">
                   <a class="btnOverview">Overview</a>
                 </li>
-                <li class="liExamples">
-                  <a class="btnExamples">Examples</a>
-                </li>
-                <li class="liTipsAndTricks">
-                  <a class="btnTipsAndTricks">Tips and Tricks</a>
-                </li>
+                <li class="liExamples"><a class="btnExamples">Examples</a></li>
                 <li class="liExercises">
                   <a class="btnExercises">Exercises</a>
                 </li>
@@ -454,7 +506,6 @@
               </ul>
             </div>
           </div>
-          <div class="column is-one-fifth">...</div>
         </div>
       </div>
     </main>

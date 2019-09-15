@@ -65,3 +65,507 @@
     </li>
   </ul>
 </nav>
+
+
+<div class="content">
+  <!-- Overview -->
+  <div id="overview">
+    <section>
+      <p>
+        Directed Situations are short scenarios or situations in
+        which you are required to provide a one sentence response
+        in Spanish.
+      </p>
+
+      <p>Example, you are given the following scenario:</p>
+
+      <div class="notification is-info">
+        <p>
+          "Your friend’s birthday is coming up. Write the text
+          message you send him with well wishes."
+        </p>
+      </div>
+
+      <p>In this example, you are required to:</p>
+
+      <ul>
+        <li>
+          Acknowledge that it’s your friend’s birthday, and,
+        </li>
+        <li>Wish him well wishes.</li>
+      </ul>
+
+      <h6 class="title" style="padding-top: 10px;">
+        Suggested Responses
+      </h6>
+
+      <div>
+        <input
+          type="checkbox"
+          id="example1"
+          name="q"
+          class="questions"
+        />
+        <div class="plus">
+          <i
+            style="color: coral;"
+            class="fas fa-angle-double-right"
+          ></i>
+        </div>
+        <label for="example1" class="question">
+          <a href="#"> Feliz cumpleaños</a> Juan y yo espero que
+          <a href="../tenses/subjunctive-mood.html">tú tengas</a>
+          un buen día.
+        </label>
+
+        <div class="answers">
+          <p>
+            Happy birthday, Juan, and I hope you have a great day.
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <input
+          type="checkbox"
+          id="example2"
+          name="q"
+          class="questions"
+        />
+        <div class="plus">
+          <i
+            style="color: coral;"
+            class="fas fa-angle-double-right"
+          ></i>
+        </div>
+        <label for="example2" class="question">
+          ¡Feliz cumpleaños!</label
+        >
+
+        <div class="answers">
+          <p>
+            Happy birthday!
+          </p>
+        </div>
+      </div>
+
+      <div class="alert alert-danger" role="alert">
+        <span
+          ><i
+            style="color: red;"
+            class="fas fa-radiation nav-icon"
+          ></i>
+          <b>Important</b>
+        </span>
+        <p style="padding-top: 5px!important;">
+          You may be penalised if you write more than one
+          sentences.
+        </p>
+      </div>
+
+      <p>Let's take a look at another example:</p>
+
+      <div class="notification is-info">
+        <p>
+          "You wish to make a request to your teacher. Write a
+          note making the request."
+        </p>
+      </div>
+
+      <p>In this example, you are required to:</p>
+
+      <ul>
+        <li>Make a request to your teacher</li>
+      </ul>
+
+      <div>
+        <input
+          type="checkbox"
+          id="example3"
+          name="q"
+          class="questions"
+        />
+        <div class="plus">
+          <i
+            style="color: coral;"
+            class="fas fa-angle-double-right"
+          ></i>
+        </div>
+        <label for="example3" class="question">
+          ¿Puedo ir al baño, por favor?</label
+        >
+
+        <div class="answers">
+          <p>
+            May I go to the bathroom, please?
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <input
+          type="checkbox"
+          id="example4"
+          name="q"
+          class="questions"
+        />
+        <div class="plus">
+          <i
+            style="color: coral;"
+            class="fas fa-angle-double-right"
+          ></i>
+        </div>
+        <label for="example4" class="question">
+          ¿Puede repetir, por favor?</label
+        >
+
+        <div class="answers">
+          <p>
+            Can you repeat, please?
+          </p>
+
+          <div class="alert alert-primary" role="alert">
+            Remeber that you must use the polite form (usted or
+            ustedes) when speaking with adults or someone with
+            authority.
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Examples -->
+  <div id="examples" style="display:none;">
+    <section>
+      <p>
+        Let's take a look at a few examples and how to approach
+        them. We'll use this
+        <a
+          target="_blank"
+          href="https://cxc.org/SiteAssets/EXEMPLARS/CSEC/SPANISH/CSEC_June2011_Spanish_Paper2_SectionI_Directed%20Situations.Ex.PDF"
+          >famous paper.</a
+        >
+      </p>
+      <br />
+
+      <div>
+        <input
+          type="checkbox"
+          id="ex1"
+          name="q"
+          class="questions"
+        />
+        <div class="plus">
+          <i
+            style="color: purple;"
+            class="fas fa-angle-double-right"
+          ></i>
+        </div>
+        <label for="ex1" class="question"
+          >Your teacher has asked the students in your class to
+          write one sentence indicating why they have chosen to
+          study Spanish. Write your sentence.</label
+        >
+
+        <div class="answers">
+          <div class="rounded-corner">
+            <p>In this example, you are required to indicate:</p>
+
+            <ul>
+              <li>Why you chose to study Spanish, and</li>
+              <li>
+                Display your knowledge of 'por' vs. 'para'
+              </li>
+            </ul>
+
+            <h6>Suggested Responses</h6>
+
+            <ul>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <div>
+        <input
+          type="checkbox"
+          id="ex2"
+          name="q"
+          class="questions"
+        />
+        <div class="plus">
+          <i
+            style="color: coral;"
+            class="fas fa-angle-double-right"
+          ></i>
+        </div>
+        <label for="ex2" class="question"
+          >You have just received some sad news. Send an email to
+          a friend sharing this information</label
+        >
+
+        <div class="answers">
+          <div class="rounded-corner">
+            <p>
+              This example is very straightforward. You care
+              required to express the sad news that you just
+              heard.
+            </p>
+
+            <h6>Suggested Responses</h6>
+
+            <ul>
+              <li>
+                Mi tío es muy enfermo y esta en el hospital.
+              </li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <div>
+        <input
+          type="checkbox"
+          id="ex3"
+          name="q"
+          class="questions"
+        />
+        <div class="plus">
+          <i
+            style="color: purple;"
+            class="fas fa-angle-double-right"
+          ></i>
+        </div>
+        <label for="ex3" class="question"
+          >You have won a large sum of money as a prize. Send an
+          email to your cousin telling her of two things that you
+          plan to do with the money.</label
+        >
+
+        <div class="answers">
+          <div class="rounded-corner">
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <div>
+        <input
+          type="checkbox"
+          id="ex4"
+          name="q"
+          class="questions"
+        />
+        <div class="plus">
+          <i
+            style="color: coral;"
+            class="fas fa-angle-double-right"
+          ></i>
+        </div>
+        <label for="ex4" class="question"
+          >Your sister wants to go to the beach on the weekend but
+          you don’t. Send an email suggesting an
+          alternative.</label
+        >
+
+        <div class="answers">
+          <div class="rounded-corner">
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <div>
+        <input
+          type="checkbox"
+          id="ex5"
+          name="q"
+          class="questions"
+        />
+        <div class="plus">
+          <i
+            style="color: purple;"
+            class="fas fa-angle-double-right"
+          ></i>
+        </div>
+        <label for="ex5" class="question"
+          >You have been assigned a roommate for your school trip
+          but you are not happy with this arrangement. Write a
+          short message to your teacher indicating why.</label
+        >
+
+        <div class="answers">
+          <div class="rounded-corner">
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <div>
+        <input
+          type="checkbox"
+          id="ex6"
+          name="q"
+          class="questions"
+        />
+        <div class="plus">
+          <i
+            style="color: coral;"
+            class="fas fa-angle-double-right"
+          ></i>
+        </div>
+        <label for="ex6" class="question"
+          >You are unable to attend a school outing next weekend
+          and you are very disappointed. Write an email to your
+          teacher making a special request.</label
+        >
+
+        <div class="answers">
+          <div class="rounded-corner">
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <div>
+        <input
+          type="checkbox"
+          id="ex7"
+          name="q"
+          class="questions"
+        />
+        <div class="plus">
+          <i
+            style="color: purple;"
+            class="fas fa-angle-double-right"
+          ></i>
+        </div>
+        <label for="ex7" class="question"
+          >You wish to inform your Spanish teacher of something
+          that happened in class during her absence. Write the
+          note you leave on the teacher’s desk to inform her of
+          the incident.</label
+        >
+
+        <div class="answers">
+          <div class="rounded-corner">
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <div>
+        <input
+          type="checkbox"
+          id="ex8"
+          name="q"
+          class="questions"
+        />
+        <div class="plus">
+          <i
+            style="color: coral;"
+            class="fas fa-angle-double-right"
+          ></i>
+        </div>
+        <label for="ex8" class="question"
+          >Write a note of apology to your mother giving a reason
+          for your misbehavior.</label
+        >
+
+        <div class="answers">
+          <div class="rounded-corner">
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <div>
+        <input
+          type="checkbox"
+          id="ex9"
+          name="q"
+          class="questions"
+        />
+        <div class="plus">
+          <i
+            style="color: purple;"
+            class="fas fa-angle-double-right"
+          ></i>
+        </div>
+        <label for="ex9" class="question"
+          >You are completing an application form for a university
+          and you are required to write one sentence indicating an
+          activity in which you would like to get involved on
+          campus. What do you write?</label
+        >
+
+        <div class="answers">
+          <div class="rounded-corner">
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <div>
+        <input
+          type="checkbox"
+          id="ex10"
+          name="q"
+          class="questions"
+        />
+        <div class="plus">
+          <i
+            style="color: coral;"
+            class="fas fa-angle-double-right"
+          ></i>
+        </div>
+        <label for="ex10" class="question"
+          >You planned an activity with your friends but you had
+          to cancel. Write the email you send informing them about
+          it and explain the reason why.</label
+        >
+
+        <div class="answers">
+          <div class="rounded-corner">
+            <p></p>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <p>
+        <i
+          class="fas fa-file-download facebook-blue inline-icon"
+        ></i
+        >Get this paper
+      </p>
+    </section>
+  </div>
+
+  <!-- Tips and Tricks -->
+  <div id="tipsandtricks" style="display:none;">
+    <section></section>
+  </div>
+
+  <!-- Exercises -->
+  <div id="exercises" style="display:none;">
+    <section></section>
+  </div>
+
+  <!-- Resources -->
+  <div id="resources" style="display:none;">
+    <section></section>
+  </div>
+</div>
