@@ -106,6 +106,10 @@ caption {
   margin: 0px !important;
 }
 
+.list-unstyled  li {
+  margin-bottom: 13px;
+}
+
 /* Navigation icon padding */
 .nav-icon-1 {
   padding-right: 1px;
